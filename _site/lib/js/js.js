@@ -3,7 +3,7 @@
   $(function(){
   // carousel demo
   $('#myCarousel').carousel({  
-    interval: 2000 // in milliseconds  
+    interval: 5000 // in milliseconds  
   })
   })
 }(window.jQuery)

@@ -223,6 +223,22 @@ body {
 	margin-top: -70px;
 }
 
+
+/* Map */
+#map { 
+	width: 940px;
+	height: 500px;
+	z-index:0;
+}
+
+.zoomin {
+  top:64px;
+  }
+.zoomout {
+  top:64px;
+  }
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

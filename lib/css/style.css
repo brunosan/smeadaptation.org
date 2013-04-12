@@ -82,10 +82,15 @@ body {
   top: 160px;
   margin-top: 0;
   font-size: 120px;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  text-shadow: 0 0 2px white;
   background-color: transparent;
   border: 0;
   z-index: 10;
+  color:black;
+}
+.carousel-control:hover {
+  color:white;
+  text-shadow: 0 0 2px black;
 }
 
 .carousel-control-left {

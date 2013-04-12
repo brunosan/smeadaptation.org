@@ -1,15 +1,16 @@
 <div id="myCarousel" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
-    <div id="map" class="item active">
+    <div  class="item active">
+		  	<iframe width='940' height='480' frameBorder='0' src='http://a.tiles.mapbox.com/v3/gai.map-df7e710b.html#5.024083238061253/20.863393848898742/-93.06918158867389'></iframe>
       <div class="container">
-        <div class="carousel-caption">
+        <div class="carousel-caption caption-iframe">
           <h1>Water</h1>
           <p class="lead">Water Scarcity is an increasing challenge in Mexico. According to our survey 60% identify water as a major driver of their mid-term outlook.</p>
         </div>
       </div>
     </div>
     <div class="item">
-      <img src="img/img-02.jpg" alt="">
+      <div id="map"> </div>
       <div class="container">
         <div class="carousel-caption">
           <h1>Another example headline.</h1>
@@ -33,7 +34,8 @@
 
 
 <script>
-  var map = mapbox.map('map', MM.Point(940,500));
+  //var map = mapbox.map('map',false, {x: 940, y: 500});
+  var map = mapbox.map('map',false, {x: 256, y: 500});
   map.addLayer(mapbox.layer().id('gai.map-df7e710b'));
   map.ui.zoomer.add();
   map.zoom(5).center({ lat: 20.8, lon: -94 });

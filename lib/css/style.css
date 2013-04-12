@@ -117,6 +117,12 @@ body {
   margin-top: 10px;
 }
 
+.caption-iframe{
+	position: relative;
+    z-index: 9;
+    top: -500px;
+}
+
 .carousel.fade
 {
     opacity: 1;
@@ -226,8 +232,7 @@ body {
 
 /* Map */
 #map { 
-	width: 940px;
-	height: 500px;
+	width: 256px;
 	z-index:0;
 }
 

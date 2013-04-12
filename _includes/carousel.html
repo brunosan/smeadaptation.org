@@ -1,7 +1,6 @@
 <div id="myCarousel" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
-    <div class="item active">
-      <img src="img/img-01.jpg" alt="">
+    <div id="map" class="item active">
       <div class="container">
         <div class="carousel-caption">
           <h1>Water</h1>
@@ -31,3 +30,14 @@
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+
+
+<script>
+  var map = mapbox.map('map', MM.Point(940,500));
+  map.addLayer(mapbox.layer().id('gai.map-df7e710b'));
+  map.ui.zoomer.add();
+  map.zoom(5).center({ lat: 20.8, lon: -94 });
+
+  map.ui.attribution.add()
+      .content('<a href="http://mapbox.com/about/maps">Map Terms</a>');
+</script>

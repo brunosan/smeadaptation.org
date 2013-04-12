@@ -2,6 +2,8 @@ auto: true
 markdown: rdiscount
 exclude: ["README.md"]
 
+permalink: /:categories/:year/:month/:day/:title.html
+
 baseurl:      /smeadaptation.org
 title: "SME Adaptation"
 author:    "Global Adaptation Institute - Tecnológico de Monterrey"

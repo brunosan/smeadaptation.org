@@ -183,6 +183,10 @@ body {
 	 width: 120px;
  }
 
+.anchor-offset h1{
+	padding-top: 70px; 
+	margin-top: -70px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

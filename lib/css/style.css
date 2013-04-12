@@ -88,6 +88,14 @@ body {
   z-index: 10;
 }
 
+.carousel-control-left {
+
+}
+
+.carousel-control-right {
+
+}
+
 .carousel .item {
   height: 500px;
 }

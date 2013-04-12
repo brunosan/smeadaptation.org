@@ -4,8 +4,20 @@
 		  	<iframe width='940' height='480' frameBorder='0' src='http://a.tiles.mapbox.com/v3/gai.map-df7e710b.html#5.024083238061253/20.863393848898742/-93.06918158867389'></iframe>
       <div class="container">
         <div class="carousel-caption caption-offset">
-          <h1>Water</h1>
-          <p class="lead">Water Scarcity is an increasing challenge in Mexico. According to our survey 60% identify water as a major driver of their mid-term outlook.</p>
+          <h1>
+	{% if page.lang == 'en' %}
+		Water
+	{% else %}
+		Agua
+	{% endif %}
+		</h1>
+          <p class="lead">
+	{% if page.lang == 'en' %}
+		Water Scarcity is an increasing challenge in Mexico. According to our survey 60% identify water as a major driver of their mid-term outlook.
+	{% else %}
+		La escasez de Agua es un importante reto en Méjico. Nuestro análisis sugiere que el 60% de las SME identifican agua como uno de los mayores retos a medio plazo en su negocio
+	{% endif %}	
+		</p>
         </div>
       </div>
     </div>
@@ -13,17 +25,20 @@
       <div id="map"> </div>
       <div class="container">
         <div class="carousel-caption caption-offset">
-          <h1>Food</h1>
-          <p class="lead">70% of the income of SME depends directly on Agricultural products.</p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/img-03.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1>
+	{% if page.lang == 'en' %}
+		Food
+	{% else %}
+		Comida
+	{% endif %}
+		</h1>
+	         <p class="lead">
+	{% if page.lang == 'en' %}
+		75% of the supply for SME depend directly on reliable food and agriculture suppliers.
+	{% else %}
+		75% de la provisión de las  SME depende directamente de sistemas confiables de comida y agricultura.
+	{% endif %}
+	</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,24 @@
+---
+layout: layout
+title: Blog
+nav_title: Blog
+order: 2
+lang: es
+---
+
+<div class="page-content">
+	{% for post in site.categories.es %}
+		<div class="post">
+			<h1><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
+		
+			<p>
+				{{ post.date | date: "%B %e, %Y" }}
+			</p>
+		
+			{{ post.content | split:'</p>' | first }} 
+			<a src="{{post.url}}"> <p>Leer el resto de la entrada</a>.</p>
+		
+			<hr />
+		</div>
+	{% endfor %}
+</div>

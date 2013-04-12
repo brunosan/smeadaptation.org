@@ -1,7 +1,9 @@
 --- 
 layout: post 
 title: Forum for Entrepreneurial Resilience 
+category: en
 --- 
+
 <p>
 	Last year, Mexico became <a href="http://blogs.ei.columbia.edu/2012/06/26/mexicos-climate-change-law/">one of the first nations</a> &nbsp;to pass a comprehensive climate change law that addresses both mitigation AND adaptation. The "General Climate Change Law" sets up the boundaries or legal framework for various government ministries to implement specific climate and adaptation initiatives.
 </p>

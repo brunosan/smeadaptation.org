@@ -1,5 +1,5 @@
 #/bin.sh
 cd ~/Sites/GAIN/smeadaptation.org
-jekyll --server --auto 
+jekyll --server 4001 --auto 
 cd ~/Sites/GAIN/smeadaptation.org
-jekyll --server --auto 
+jekyll --server 4001 --auto 

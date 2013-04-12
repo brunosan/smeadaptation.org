@@ -214,7 +214,8 @@ body {
 	margin-top: 10px;
 	margin-left: 12px;
 	margin-right: 12px;
-	max-width: 50%;	
+	max-width: 50%;
+	min-width: 573px;	
 }
 
 .sidebar-nav-fixed {

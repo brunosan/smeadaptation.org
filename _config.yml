@@ -3,7 +3,7 @@ markdown: rdiscount
 permalink: /title
 exclude: ["README.md"]
 
-baseurl:      http://smeadaptation.org
+baseurl:      /smeadaptation.org
 title: "SME Adaptation"
 author:    "Global Adaptation Institute - Tecnológico de Monterrey"
 description:    "SME Adaptation website to support our Templeton grant."

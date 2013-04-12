@@ -253,6 +253,12 @@ body {
   }
 
 
+/* Text pages */
+
+.narrative{
+	margin-left: 24px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

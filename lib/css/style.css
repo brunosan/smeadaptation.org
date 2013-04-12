@@ -325,8 +325,14 @@ body {
     margin-top: 353px;
   }
   .carousel-caption h1 {
-    font-size: 30px;
+    font-size: 10px;    
   }
+  .carousel-caption h2 {
+    font-size: 10px;    
+  }
+  .carousel-caption h3 {
+    font-size: 40px; 
+}
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;

@@ -117,7 +117,7 @@ body {
   margin-top: 10px;
 }
 
-.caption-iframe{
+.caption-offset{
 	position: relative;
     z-index: 9;
     top: -500px;

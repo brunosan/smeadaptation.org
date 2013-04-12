@@ -20,15 +20,11 @@
 				{% for order in (0..99) %}
 				  {% for p in site.pages %}
 				    {% if p.order == order %}
-						{% if p.url contains "/page" %}
-
-						{% else %}
 				      		<li {% if p.url == page.url %}class="active"{% endif %}>
 				        		<a href="{{ p.url }}">
 				          			{{ p.nav_title }}
 				        		</a>
 				      		</li>
-						{% endif %}
 				    {% endif %}
 				  {% endfor %}
 				{% endfor %}

@@ -173,8 +173,19 @@ body {
 	margin-top: 10px;
 	margin-left: 12px;
 	margin-right: 12px;
-	max-width: 50%;
-	
+	max-width: 50%;	
+}
+
+.sidebar-nav-fixed {
+     position:fixed;
+     top:60px;
+   	 left: 0px;
+	 width: 120px;
+ }
+
+.anchor-offset h1{
+	padding-top: 70px; 
+	margin-top: -70px;
 }
 
 /* RESPONSIVE CSS

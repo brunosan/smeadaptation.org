@@ -165,7 +165,17 @@ body {
   letter-spacing: -1px;
 }
 
+.clean-top{
+	margin-top:88px;
+}
 
+.navbar-borders{
+	margin-top: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+	max-width: 50%;
+	
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

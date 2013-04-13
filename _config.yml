@@ -6,6 +6,7 @@ permalink: /:categories/:year/:month/:day/:title.html
 
 baseurl:      /smeadaptation.org
 title: "SME Adaptation"
+title_es: "Adaptación SME"
 author:    "Global Adaptation Institute - Tecnológico de Monterrey"
 description:    "SME Adaptation website to support our Templeton grant."
 keywords: "climate, adaptation, sme"

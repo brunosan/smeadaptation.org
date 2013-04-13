@@ -140,6 +140,13 @@ body {
   line-height: 1.25;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  }
+.carousel-caption h2,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #434343;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 .carousel-caption .btn {
   margin-top: 10px;
@@ -251,6 +258,11 @@ body {
 .anchor-offset h1{
 	padding-top: 70px; 
 	margin-top: -70px;
+	 }
+
+.anchor-offset h2{
+	padding-top: 70px; 
+	margin-top: -70px;
 }
 
 
@@ -333,15 +345,12 @@ body {
     width: 65%;
     padding: 0 70px;
     margin-top: 353px;
-  }
+}
   .carousel-caption h1 {
-    font-size: 10px;    
-  }
+    font-size: 30px; 
+    }
   .carousel-caption h2 {
-    font-size: 10px;    
-  }
-  .carousel-caption h3 {
-    font-size: 40px; 
+    font-size: 5px;
 }
   .carousel-caption .lead,
   .carousel-caption .btn {

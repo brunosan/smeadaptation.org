@@ -1,7 +1,6 @@
 --- 
 layout: post 
 title: Foro de resiliencia emprendedora 
-category: es
 lang: es
 --- 
 

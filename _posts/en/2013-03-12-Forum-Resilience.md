@@ -1,7 +1,6 @@
 --- 
 layout: post 
 title: Forum for Entrepreneurial Resilience 
-category: en
 lang: en
 --- 
 

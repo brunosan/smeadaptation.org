@@ -4,7 +4,7 @@ exclude: ["README.md"]
 
 permalink: /:categories/:year/:month/:day/:title.html
 
-baseurl:      /smeadaptation.org
+baseurl:      /
 title: "SME Adaptation"
 title_es: "Adaptación SME"
 author:    "Global Adaptation Institute - Tecnológico de Monterrey"

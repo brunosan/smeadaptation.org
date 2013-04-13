@@ -7,7 +7,7 @@ lang: es
 ---
 
 <div class="page-content">
-	{% for post in site.categories.es %}
+	{% for post in site.posts %}{% if post.lang == 'es' %}
 		<div class="post">
 			<h1><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
 		
@@ -20,5 +20,5 @@ lang: es
 		
 			<hr />
 		</div>
-	{% endfor %}
+	{% endif %}{% endfor %}
 </div>

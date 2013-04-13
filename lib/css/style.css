@@ -62,7 +62,22 @@ body {
   margin-top: 10px;
 }
 
+.navbar-borders{
+	margin-top: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 573px;
+	height:52px;;	
+}
 
+.lang-icon{
+    height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+	position:fixed;
+	top:16px
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -223,13 +238,7 @@ body {
 	margin-top:88px;
 }
 
-.navbar-borders{
-	margin-top: 10px;
-	margin-left: 12px;
-	margin-right: 12px;
-	max-width: 50%;
-	min-width: 573px;	
-}
+
 
 .sidebar-nav-fixed {
      position:fixed;

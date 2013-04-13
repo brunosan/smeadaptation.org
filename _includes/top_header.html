@@ -12,8 +12,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="{{site.baseurl}}/">{{site.title}}</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+			{% if page.lang == 'en' %}
+				<a class="brand" href="{{site.baseurl}}/{{page.lang}}">{{site.title}}</a>
+			{% else %}
+				<a class="brand" href="{{site.baseurl}}/{{page.lang}}">{{site.title_es}}</a>
+			{% endif %}
+            
+			<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">              
 				<!--Custom pages on site -->
@@ -28,8 +33,18 @@
 				    {% endif %}{% endif %}
 				  {% endfor %}
 				{% endfor %}
-				<!--End Custom pages on site -->						
+				<!--End Custom pages on site -->
+				<!--Language selector -->						
               </ul>
+				
+	        	<div class='container'><div class='brand'>	
+	{% if page.lang == 'en' %}
+		<a href="{{site.baseurl}}{{ page.url | replace:'/en/','/es/' }}" alt='Cambiar a español'><img class='lang-icon' src='{{site.baseurl}}/img/flag-mx.png'></a>
+	{% else %}
+		<a href="{{site.baseurl}}{{ page.url | replace:'/es/','/en/' }}" alt='Switch to English'><img class='lang-icon' src='{{site.baseurl}}/img/flag-us.png'></a>
+	{% endif %}
+						
+				</div></div>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->

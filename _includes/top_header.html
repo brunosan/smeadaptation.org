@@ -26,7 +26,7 @@
 				  {% for p in site.pages %}
 				    {% if p.lang == page.lang %}{% if p.order == order %}
 				      		<li {% if p.url == page.url %}class="active"{% endif %}>
-				        		<a href="{{site.baseurl}}{{ p.url }}">
+				        		<a href="{{ p.url }}">
 				          			{{ p.nav_title }}
 				        		</a>
 				      		</li>

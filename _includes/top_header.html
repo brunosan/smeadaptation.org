@@ -39,9 +39,9 @@
 				
 	        	<div class='container'><div class='brand'>	
 	{% if page.lang == 'en' %}
-		<a href="{{site.baseurl}}{{ page.url | replace:'/en/','/es/' }}" alt='Cambiar a español'><img class='lang-icon' src='{{site.baseurl}}img/flag-mx.png'></a>
+		<a href="{{ page.url | replace:'/en/','/es/' }}" alt='Cambiar a español'><img class='lang-icon' src='{{site.baseurl}}img/flag-mx.png'></a>
 	{% else %}
-		<a href="{{site.baseurl}}{{ page.url | replace:'/es/','/en/' }}" alt='Switch to English'><img class='lang-icon' src='{{site.baseurl}}img/flag-us.png'></a>
+		<a href="{{ page.url | replace:'/es/','/en/' }}" alt='Switch to English'><img class='lang-icon' src='{{site.baseurl}}img/flag-us.png'></a>
 	{% endif %}
 						
 				</div></div>

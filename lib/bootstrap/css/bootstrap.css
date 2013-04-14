@@ -733,7 +733,9 @@ a.text-success:focus {
 }
 
 h1,
-h2,
+h2{  
+color: #500000;
+}
 h3,
 h4,
 h5,
@@ -768,7 +770,8 @@ h1 {
 }
 
 h2 {
-  font-size: 31.5px;
+  font-size: 10px;
+  color: #500000;
 }
 
 h3 {

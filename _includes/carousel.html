@@ -1,6 +1,6 @@
-<div id="myCarousel" class="carousel slide" data-interval="false">
+<div id="myCarousel" class="carousel slide span9" data-interval="false">
   <div class="carousel-inner">
-    <div id="carousel1" class="item active">
+    <div id="carousel1" class="item">
 		  	<iframe width='940' height='480' frameBorder='0' src='http://a.tiles.mapbox.com/v3/gai.map-df7e710b.html#5.024083238061253/20.863393848898742/-93.06918158867389'></iframe>
       <div class="container">
         <div class="carousel-caption caption-offset">
@@ -21,8 +21,8 @@
         </div>
       </div>
     </div>
-    <div id="carousel2" class="item">
-      <div id="map"> </div>
+    <div id="carousel2" class="item active">
+      <div id="map1"> </div>
       <div class="container">
         <div class="carousel-caption caption-offset">
           <h1>
@@ -49,11 +49,14 @@
 
 
 <script>
-  //var map = mapbox.map('map',false, {x: 940, y: 500});
-  var map = mapbox.map('map',false, {x: 256, y: 500});
+  var map = mapbox.map('map1',false, {x: 940, y: 500});
+  //var map = mapbox.map('map1',false, {x: 256, y: 500});
   map.addLayer(mapbox.layer().id('gai.map-df7e710b'));
   map.ui.zoomer.add();
   map.zoom(5).center({ lat: 20.8, lon: -94 });
+
+{% include markers.js %}
+
 
   map.ui.attribution.add()
       .content('<a href="http://mapbox.com/about/maps">Map Terms</a>');

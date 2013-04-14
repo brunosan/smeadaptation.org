@@ -267,6 +267,8 @@ body {
   top:64px;
   }
 
+#map1 label { width: auto; display:inline; }
+#map1 img { max-width: none; }
 
 /* Text pages */
 

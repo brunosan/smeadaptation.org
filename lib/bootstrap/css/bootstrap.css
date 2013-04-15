@@ -742,7 +742,6 @@ h6 {
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
   text-rendering: optimizelegibility;
 }
 
@@ -754,7 +753,7 @@ h5 small,
 h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #99CC99;
+  color: #999999;
 }
 
 h1,

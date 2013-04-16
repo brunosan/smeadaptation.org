@@ -30,7 +30,7 @@ markerLayer.factory(function(f) {
         // pull the title and description attributes of the feature.
         // you could customize this to pull other attributes
         h2.innerHTML = f.properties.title;
-        p.innerHTML = f.properties.description;
+        p.innerHTML = f.properties.intro;
 		a.className="btn"; 
 		a.href= f.properties.url;
 		a.innerHTML='View complete post &raquo';
@@ -60,8 +60,8 @@ MM.addEvent(map.parent, 'click', function() {
 	    properties: {
 	        'marker-color': '{{ post.color }}',
 	        'marker-symbol': '{{ post.icon }}',
-	        title: '"{{ post.title }}"',
-	        description: 'Click for details below.',
+	        title: '{{ post.title }}',
+	        intro: '{{ post.content | split:'</p>' | first | truncatewords: 50 | strip_newlines | strip_html }}',
 			image: '{{site.baseurl}}img/{{post.image}}',
 			url: '{{post.url}}'
 	    }

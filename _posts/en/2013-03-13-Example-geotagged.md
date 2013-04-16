@@ -3,7 +3,7 @@ layout: post
 title: Example of geotagged post
 lang: en
 location: [-96.51,17.21]
-image: example.png
+image: example.jpg
 icon: garden
 color: "#000"
 --- 

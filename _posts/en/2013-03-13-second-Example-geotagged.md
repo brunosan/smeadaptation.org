@@ -3,7 +3,7 @@ layout: post
 title: Another post to put on the map
 lang: en
 location: [-98.51,18.00]
-image: example.png
+image: example2.jpg
 icon: park
 color: "#ff4444"
 --- 

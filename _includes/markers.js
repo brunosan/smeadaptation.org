@@ -24,12 +24,16 @@ markerLayer.factory(function(f) {
         // from the feature, which we've stored as the variable 'f'
         var h2 = info.appendChild(document.createElement('h2'));
         var p = info.appendChild(document.createElement('p'));
+		var a=  info.appendChild(document.createElement('a'));
 		var img= pic.appendChild(document.createElement("img"));
 		
         // pull the title and description attributes of the feature.
         // you could customize this to pull other attributes
         h2.innerHTML = f.properties.title;
         p.innerHTML = f.properties.description;
+		a.className="btn"; 
+		a.href= f.properties.url;
+		a.innerHTML='View complete post &raquo';
 		img.src= f.properties.image;
         // prevent this event from bubbling down to the map and clearing
         // the content
@@ -41,8 +45,10 @@ markerLayer.factory(function(f) {
 // clear the content of alert when the user clicks on a map area other
 // than a tooltip
 MM.addEvent(map.parent, 'click', function() {
-    var alert = document.getElementById('markerinfo');
+    var info = document.getElementById('markerinfo');
+	var pic = document.getElementById('markerpic');
     info.innerHTML = '';
+	pic.innerHTML = '';
 });
 
 // See the 'adding a single marker example for help with adding a marker
@@ -56,7 +62,8 @@ MM.addEvent(map.parent, 'click', function() {
 	        'marker-symbol': '{{ post.icon }}',
 	        title: '"{{ post.title }}"',
 	        description: 'Click for details below.',
-			image: '{{site.baseurl}}img/{{post.image}}'
+			image: '{{site.baseurl}}img/{{post.image}}',
+			url: '{{site.baseurl}}{{post.url}}'
 	    }
 	});
 {% endif %}{% endif %}{% endfor %}

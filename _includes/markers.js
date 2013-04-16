@@ -63,7 +63,7 @@ MM.addEvent(map.parent, 'click', function() {
 	        title: '"{{ post.title }}"',
 	        description: 'Click for details below.',
 			image: '{{site.baseurl}}img/{{post.image}}',
-			url: '{{site.baseurl}}{{post.url}}'
+			url: '{{post.url}}'
 	    }
 	});
 {% endif %}{% endif %}{% endfor %}

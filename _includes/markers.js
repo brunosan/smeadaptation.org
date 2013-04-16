@@ -5,22 +5,32 @@ var markerLayer = mapbox.markers.layer();
 // binds tooltips to each marker that has title
 // and description defined.
 map.addLayer(markerLayer);
+mapbox.markers.interaction(markerLayer);
 
-var alert = document.getElementById('markerinfo');
+
 
 markerLayer.factory(function(f) {
-    var elem = mapbox.markers.simplestyle_factory(f);
+	
+	var elem = mapbox.markers.simplestyle_factory(f);
+	
     MM.addEvent(elem, 'click', function(e) {
+	    var info = document.getElementById('markerinfo');
+		var pic = document.getElementById('markerpic');
+		
         // clear the alert box
-        alert.innerHTML = '';
+        info.innerHTML = '';
+		pic.innerHTML = '';
         // add a header and paragraph, and fill them with content
         // from the feature, which we've stored as the variable 'f'
-        var h1 = alert.appendChild(document.createElement('h1'));
-        var p = alert.appendChild(document.createElement('p'));
+        var h2 = info.appendChild(document.createElement('h2'));
+        var p = info.appendChild(document.createElement('p'));
+		var img= pic.appendChild(document.createElement("img"));
+		
         // pull the title and description attributes of the feature.
         // you could customize this to pull other attributes
-        h1.innerHTML = f.properties.title;
+        h2.innerHTML = f.properties.title;
         p.innerHTML = f.properties.description;
+		img.src= f.properties.image;
         // prevent this event from bubbling down to the map and clearing
         // the content
         e.stopPropagation();
@@ -32,18 +42,22 @@ markerLayer.factory(function(f) {
 // than a tooltip
 MM.addEvent(map.parent, 'click', function() {
     var alert = document.getElementById('markerinfo');
-    alert.innerHTML = '';
+    info.innerHTML = '';
 });
 
 // See the 'adding a single marker example for help with adding a marker
-markerLayer.add_feature({
-    geometry: {
-        coordinates: [-93.06, 20.863]
-    },
-    properties: {
-        'marker-color': '#000',
-        'marker-symbol': 'star-stroked',
-        title: 'Example Marker',
-        description: 'This is a single marker.'
-    }
-});
+{% for post in site.posts %}{% if post.lang == 'en' %}{% if post.location  %}
+   markerLayer.add_feature({ 	
+		geometry: {
+	        coordinates: [{{ post.location }}]
+		},
+	    properties: {
+	        'marker-color': '{{ post.color }}',
+	        'marker-symbol': '{{ post.icon }}',
+	        title: '"{{ post.title }}"',
+	        description: 'Click for details below.',
+			image: '{{site.baseurl}}img/{{post.image}}'
+	    }
+	});
+{% endif %}{% endif %}{% endfor %}
+	

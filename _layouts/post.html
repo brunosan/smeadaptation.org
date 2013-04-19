@@ -2,20 +2,65 @@
 layout: layout
 ---
 
-<div class="content">
-  	<div id="post">
+<div class="content container">
+{{if post.loc}}
+	<div clas="row">
+		<div class="span 12">
+		<div id="map"></div>
+		</div>
+	</div>
+{{endif}}
+	
+<div class="row">
+  	<div class="span2" >
+	<img src="{{site.baseurl}}img/{{post.image}}" width="100%">
+	</div>
+	<div id="post" class="span10 offset2">
     	<h1>{{ page.title }}</h1>
 		<p>
 			{{ page.date | date: "%B %e, %Y" }}
 		</p>
-		
-		<div>		
+		<p>		
     		{{ content }}
-		</div>
-  	</div>
-
+		</p>
 	<hr />
-	
 	<a class="btn" href="{{site.baseurl}}{{page.lang}}/blog">All Posts</a>
+	</div>
+</div>
 </div>
 
+{{if post.loc}}
+
+<script>
+  var map = mapbox.map('map',false, {x: 940, y: 200});
+  map.addLayer(mapbox.layer().id('gai.map-df7e710b'));
+  map.ui.zoomer.add();
+  map.zoom(5).center({ lat: 20.8, lon: -94 });
+
+// Create an empty markers layer
+  var markerLayer = mapbox.markers.layer();
+
+// Add interaction to this marker layer. This
+// binds tooltips to each marker that has title
+// and description defined.
+  map.addLayer(markerLayer);
+
+// See the 'adding a single marker example for help with adding a marker
+  markerLayer.add_feature({
+    geometry: {
+        coordinates: {{ post.location }}
+    },
+    properties: {
+        'marker-color': '#000',
+        'marker-symbol': 'star-stroked',
+        title: 'Example Marker',
+        description: 'This is a single marker.'
+    }
+  });
+
+
+  map.ui.attribution.add()
+      .content('<a href="http://mapbox.com/about/maps">Map Terms</a>');
+</script>
+
+{{endif}}

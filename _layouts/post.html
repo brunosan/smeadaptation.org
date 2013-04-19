@@ -3,7 +3,7 @@ layout: layout
 ---
 
 <div class="content container">
-{{if post.loc}}
+{{if page.location}}
 	<div clas="row">
 		<div class="span 12">
 		<div id="map"></div>
@@ -13,7 +13,7 @@ layout: layout
 	
 <div class="row">
   	<div class="span2" >
-	<img src="{{site.baseurl}}img/{{post.image}}" width="100%">
+	<img src="{{site.baseurl}}img/{{page.image}}" width="100%">
 	</div>
 	<div id="post" class="span10 offset2">
     	<h1>{{ page.title }}</h1>
@@ -30,7 +30,6 @@ layout: layout
 </div>
 
 {{if post.loc}}
-
 <script>
   var map = mapbox.map('map',false, {x: 940, y: 200});
   map.addLayer(mapbox.layer().id('gai.map-df7e710b'));
@@ -48,13 +47,12 @@ layout: layout
 // See the 'adding a single marker example for help with adding a marker
   markerLayer.add_feature({
     geometry: {
-        coordinates: {{ post.location }}
+        coordinates: {{ page.loc }}
     },
     properties: {
-        'marker-color': '#000',
-        'marker-symbol': 'star-stroked',
-        title: 'Example Marker',
-        description: 'This is a single marker.'
+        'marker-color': {{page.color}},
+        'marker-symbol': {{page.icon}},
+        title: '{{page.title}}'
     }
   });
 
@@ -62,5 +60,4 @@ layout: layout
   map.ui.attribution.add()
       .content('<a href="http://mapbox.com/about/maps">Map Terms</a>');
 </script>
-
 {{endif}}

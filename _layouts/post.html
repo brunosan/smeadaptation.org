@@ -2,10 +2,11 @@
 layout: layout
 ---
 
-<div class="content container">
+<div class="container">
+<div clas="row">
+	<div class="span 12">
 {{if page.location}}
-	<div clas="row">
-		<div class="span 12">
+		<h1>{{ page.title }}</h1>
 		<div id="map"></div>
 		</div>
 	</div>
@@ -13,10 +14,9 @@ layout: layout
 	
 <div class="row">
   	<div class="span2" >
-	<img src="{{site.baseurl}}img/{{page.image}}" width="100%">
+	<img src="{{site.baseurl}}img/{{page.image}}">
 	</div>
-	<div id="post" class="span10 offset2">
-    	<h1>{{ page.title }}</h1>
+	<div class="span8">
 		<p>
 			{{ page.date | date: "%B %e, %Y" }}
 		</p>

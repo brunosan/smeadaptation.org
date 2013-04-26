@@ -2,10 +2,10 @@
 layout: post 
 title: Resilient farms, forests and fisheries
 lang: en
-location: [-98.51,18.00]
+location: [-93.6529,18.067]
 image: example2.jpg
 icon: park
-color: "#ff4444"
+color: "#4169E1"
 --- 
 
 <p>

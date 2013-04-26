@@ -2,10 +2,10 @@
 layout: post 
 title: Resilient chocolate
 lang: en
-location: [-98.51,18.00]
+location: [-92.9585,17.9691]
 image: example2.jpg
-icon: park
-color: "#ff4444"
+icon: shop
+color: "#A0522D"
 --- 
 
 <p>

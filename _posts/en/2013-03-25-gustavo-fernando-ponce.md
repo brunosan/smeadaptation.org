@@ -2,10 +2,10 @@
 layout: post 
 title: Agroindustrias
 lang: en
-location: [-98.51,18.00]
+location: [-92.811193,17.71928]
 image: example2.jpg
-icon: park
-color: "#ff4444"
+icon: star-stroked
+color: "#00FFFF"
 --- 
 
 <p>

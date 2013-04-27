@@ -81,82 +81,13 @@ Choose below the dependence values for your SME. You can also load default value
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Company Dependence</td>
-                  <td>
-					<select id="energy-d" onchange="applyClass()"class="select-form btn">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-                  <td>
-					<select id="water-d" onchange="applyClass()" class="select-form btn">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="food-d" onchange="applyClass()" class="select-form btn">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="infra-d" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="health-d" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-                </tr>
-                <tr>
-                  <td>Company Provision</td>
-                  <td>
-					<select id="energy-p" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-                  <td>
-					<select id="water-p" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="food-p" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="infra-p" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-				  <td>
-					<select id="health-p" onchange="applyClass()" class="select-form">
-						<option val="-">-Select-</option>
-						<option val="L">Low</option>
-						<option val="M">Medium</option>
-						<option val="H">High</option>
-				  </td>
-                </tr>
+               	{% assign blocks =  "dependency|provision" | split: "|" %}
+				{% for block in blocks %}
+			 		<tr>
+                  	<td>Company {{block}}</td> 
+						{% include guide-row.html %}
+                	</tr>
+               {% endfor %}
               </tbody>
 </table>
 </div>
@@ -226,8 +157,6 @@ Depending on the investment environment and government engagement, one or all of
 
 <script>
 function readDefaults(id){
-	{
-			["Low","Low","Low","Low","Low"],
 	    var json = null;
 	    $.ajax({
 	        'async': false,

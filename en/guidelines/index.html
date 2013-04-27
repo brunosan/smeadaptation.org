@@ -225,33 +225,20 @@ Depending on the investment environment and government engagement, one or all of
 
 
 <script>
-
 function readDefaults(id){
-	// ["Low","Medium","High"];
-	switch(id)
 	{
-		//dependece[Energy, Water, Food, Infrastructure, Health]
-		//provision[Energy, Water, Food, Infrastructure, Health]
-		//region name
-	case "NL":
-		var defaults=[
-			["Low","Medium","Medium","High","Low"],
-			["Medium","Medium","Low","High","High"],
-			"Nuevo Leon"];
-	break;
-	case "DF":
-		var defaults=[
-			["Low","Medium","Medium","High","Low"],
 			["Low","Low","Low","Low","Low"],
-			"Mexico DF"];
-	break;
-	default:
-		var defaults=[
-			["Low","Low","Low","Low","Low"],
-			["Low","Low","Low","Low","Low"],
-			"Default"];
-	}
-	return defaults;
+	    var json = null;
+	    $.ajax({
+	        'async': false,
+	        'global': false,
+	        'url': '/lib/default-regions.json',
+	        'dataType': "json",
+	        'success': function (data) {
+	            json = data;
+	        }
+	    });
+	    return json[id];
 }
 function classDefault(id){
 	dic={"Low":"btn-success","Medium":"btn-warning","High":"btn-danger"};
@@ -261,13 +248,13 @@ function selectRegion(id){
 	var vals= readDefaults(id);
 	var dic=["energy","water","food","infra","health"];
 	var sec=["d","p"];
-	$("#region-def").val(vals[2]);
+	$("#region-def").val(vals.name);
 	$("#region-info").html("[Using default values for Region]");
-	for (var j=0;j<=1;j++){ //J is 0 for dependency, 1 for provision
-		for (var i=0;i<=4;i++){
-			$('#'+dic[i]+'-'+sec[j]).val(vals[j][i])
+	for(var section in vals){
+		for(var key in vals[section]){
+			$('#'+section+'-'+key).val(vals[section][key])
 			.removeClass('btn-success btn-warning btn-danger')
-			.addClass(classDefault(vals[j][i]));
+			.addClass(classDefault(vals[section][key]));
 	  	 }
 	}
 }

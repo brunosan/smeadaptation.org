@@ -70,6 +70,10 @@ body {
 	height:52px;;	
 }
 
+.select-form{
+	width:89px;
+}
+
 .lang-icon{
     height: 40px;
     overflow: visible;

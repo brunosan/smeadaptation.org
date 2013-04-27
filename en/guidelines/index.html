@@ -5,7 +5,7 @@ nav_title: Guidelines
 order: 1
 lang: en
 ---
-<div class="container-fluid">
+<div class="container">
 <div class="row">
 <div class="span2">
 	<div class="affix sidenav-container">
@@ -16,7 +16,31 @@ lang: en
 		<li><a href="#section4"><i class="icon-chevron-right"></i>Step 3 Risk & Opportunity</a></li>	
 		<li><a href="#section5"><i class="icon-chevron-right"></i>Step 4 Readiness</a></li>
 		<li><a href="#section6"><i class="icon-chevron-right"></i>Step 5 Strategy</a></li>
+			<li class="divider"></li>
 	</ul>
+
+	<form class="navbar-form pull-left">
+	  	<fieldset>
+		    <legend>Results</legend>
+		    <!--
+			<span class="help-block">Follow the guidelines to see results.</span>
+			-->
+		    <div class="input-prepend">
+			  <span class="add-on">Region:</span>
+			  <input class="span2" id="prependedInput" type="text" placeholder="Nuevo Leon" disabled>
+			</div>
+			<div class="control-group">
+			    <label class="control-label" for="inputEmail">Some other result here</label>
+			    <div class="controls">
+			      <button type="button" class="btn btn-success">Low</button>
+				  <button type="button" class="btn btn-warning">Medium</button>
+  				  <button type="button" class="btn btn-danger">High</button>
+			    </div>
+			  </div>
+					
+		  </fieldset>
+
+	</form>
 	</div>
 </div>
 
@@ -28,6 +52,48 @@ lang: en
 
 <p>
 Open up this <a href="https://dl.dropboxusercontent.com/u/22057816/SME%20WORKBOOK.xlsx"> SME Workbook</a> and follow the guidance below!
+</p>
+<div class="btn-group">
+  <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+    Select Region
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a tabindex="-1" onclick="selectRegion('NL')" href="#section2">Nuevo León</a></li>
+	<li><a tabindex="-1" href="#">México DF</a></li>
+	<li><a tabindex="-1" href="#">Other</a></li>
+  </ul>
+</div>
+
+<script>
+
+function readDefaults(id){
+	// ["Low","Medium","High"];
+	switch(id)
+	{
+	case "NL":
+	  //[Energy, Water, Food, Infrastructure, Health]
+		var defaults=["Low","Medium","Medium","High","Low"];
+	  break;
+	default:
+	  	var defaults=["Low","Low","Low","Low","Low"];
+	}
+	return defaults;
+}
+function classDefault(id){
+	dic={"Low":"btn-success","Medium":"btn-warning","H":"btn-danger"};
+	return dic[id];
+}
+function selectRegion(id){
+	var vals= readDefaults(id);
+	var dic=["energy","water","food","infra","health"];
+	for (var i=0;i<=4;i++)
+	{
+		console.log(vals[i]);
+		$('#'+dic[i]+'-d').val(vals[i]).removeClass('btn-success btn-warning btn-danger').addClass(classDefault(vals[i]));
+	}
+}
+</script>
 
 </div>
 
@@ -39,14 +105,88 @@ In this step, think about how the company depends on the key sectors or provides
 Next, consider in which sectors the SME provides products or services. This may be an easier process if the SME's core business is growing or processing food, energy production or healthcare provision. For other companies that repair or build machinery, consider how its work contributes to the larger functioning of the sector.<br><br> 
 
 In the workbook, select the degree of dependence on the below sectors (High, Medium or Low) and "yes" or "no" as to whether the SME provides a product or service in this sector: 
-
-<ul>
-<li>	Energy</li>
-<li>	Water</li>
-<li>	Food</li>
-<li>	Infrastructure</li> 
-<li>	Health</li> 
-</ul>
+<div class="row">
+<table class="table table-bordered span6">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Energy</th>
+                  <th>Water</th>
+                  <th>Food</th>
+                  <th>Infrastructure</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Company Dependence</td>
+                  <td>
+					<select id="energy-d" class="select-form btn">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+                  <td>
+					<select id="water-d" class="select-form btn">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="food-d" class="select-form btn">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="infra-d" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="health-d" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+                </tr>
+                <tr>
+                  <td>Company Provision</td>
+                  <td>
+					<select id="energy-p" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+                  <td>
+					<select id="water-p" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="food-p" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="infra-p" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+				  <td>
+					<select id="health-p" class="select-form">
+						<option val="L">Low</option>
+						<option val="M">Medium</option>
+						<option val="H">High</option>
+				  </td>
+                </tr>
+              </tbody>
+</table>
+</div>
 
 Only continue Step 2 for those sectors in which dependence is "High" or "Medium" and for which "yes" was selected. Sectors with "Low" and "no" responses are likely not priorities for the SME to address at this time.<br><br> 
 

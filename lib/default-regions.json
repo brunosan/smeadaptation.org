@@ -16,74 +16,74 @@
 			"health": "High"
 		},
 		"population_change":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"change_in_precipitation":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"sea_level_rise":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"water_supply":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"drought":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"infant_mortality":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"natural_disasters":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"technological_change":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"input_prices":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		},
 		"change_in_temperature":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
+			"energy": "Positive",
+			"water": "Neutral",
+			"food": "Negative", 
+			"infra": "Positive",
+			"health": "Positive"
 		}
 }
 

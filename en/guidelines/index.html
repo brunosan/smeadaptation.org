@@ -21,22 +21,19 @@ lang: en
 
 	<form class="navbar-form pull-left">
 	  	<fieldset>
-		    <legend>Results</legend>
+		    
 		    <!--
 			<span class="help-block">Follow the guidelines to see results.</span>
 			-->
 		    <div class="input-prepend">
 			  <span class="add-on">Region:</span>
-			  <input class="span2" id="prependedInput" type="text" placeholder="Nuevo Leon" disabled>
+			  <input class="span2" id="region-def" type="text" placeholder="No Selection" disabled>
 			</div>
-			<div class="control-group">
-			    <label class="control-label" for="inputEmail">Some other result here</label>
-			    <div class="controls">
-			      <button type="button" class="btn btn-success">Low</button>
-				  <button type="button" class="btn btn-warning">Medium</button>
-  				  <button type="button" class="btn btn-danger">High</button>
-			    </div>
-			  </div>
+			<p class=".navbar-text" id="region-info"></p>
+		  </fieldset>
+		  <fieldset>
+			<legend>Results</legend>
+			<p class=".navbar-text" id="results">Something here</p>
 					
 		  </fieldset>
 
@@ -54,46 +51,12 @@ lang: en
 Open up this <a href="https://dl.dropboxusercontent.com/u/22057816/SME%20WORKBOOK.xlsx"> SME Workbook</a> and follow the guidance below!
 </p>
 <div class="btn-group">
-  <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
-    Select Region
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-    <li><a tabindex="-1" onclick="selectRegion('NL')" href="#section2">Nuevo León</a></li>
-	<li><a tabindex="-1" href="#">México DF</a></li>
-	<li><a tabindex="-1" href="#">Other</a></li>
-  </ul>
+  <button class="btn" ><a onclick="selectRegion('NL')" href="#section2">Nuevo León</a></button>
+  <button class="btn" ><a onclick="selectRegion('DF')" href="#section2">Mexico DF</a></button>
+  <button class="btn" ><a onclick="selectRegion('otro')" href="#section2">Other</a></button>
 </div>
 
-<script>
 
-function readDefaults(id){
-	// ["Low","Medium","High"];
-	switch(id)
-	{
-	case "NL":
-	  //[Energy, Water, Food, Infrastructure, Health]
-		var defaults=["Low","Medium","Medium","High","Low"];
-	  break;
-	default:
-	  	var defaults=["Low","Low","Low","Low","Low"];
-	}
-	return defaults;
-}
-function classDefault(id){
-	dic={"Low":"btn-success","Medium":"btn-warning","H":"btn-danger"};
-	return dic[id];
-}
-function selectRegion(id){
-	var vals= readDefaults(id);
-	var dic=["energy","water","food","infra","health"];
-	for (var i=0;i<=4;i++)
-	{
-		console.log(vals[i]);
-		$('#'+dic[i]+'-d').val(vals[i]).removeClass('btn-success btn-warning btn-danger').addClass(classDefault(vals[i]));
-	}
-}
-</script>
 
 </div>
 
@@ -104,7 +67,7 @@ function selectRegion(id){
 In this step, think about how the company depends on the key sectors or provides products and services in these areas. Is it a large consumer of electricity? Does it depend upon water as an input in your products? Would a temporary blockage of road transport of its products and inputs create serious financial hardship? <br><br>
 Next, consider in which sectors the SME provides products or services. This may be an easier process if the SME's core business is growing or processing food, energy production or healthcare provision. For other companies that repair or build machinery, consider how its work contributes to the larger functioning of the sector.<br><br> 
 
-In the workbook, select the degree of dependence on the below sectors (High, Medium or Low) and "yes" or "no" as to whether the SME provides a product or service in this sector: 
+Choose below the dependence values for your SME. You can also load default values for each region.
 <div class="row">
 <table class="table table-bordered span6">
               <thead>
@@ -121,31 +84,36 @@ In the workbook, select the degree of dependence on the below sectors (High, Med
                 <tr>
                   <td>Company Dependence</td>
                   <td>
-					<select id="energy-d" class="select-form btn">
+					<select id="energy-d" onchange="applyClass()"class="select-form btn">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
                   <td>
-					<select id="water-d" class="select-form btn">
+					<select id="water-d" onchange="applyClass()" class="select-form btn">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="food-d" class="select-form btn">
+					<select id="food-d" onchange="applyClass()" class="select-form btn">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="infra-d" class="select-form">
+					<select id="infra-d" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="health-d" class="select-form">
+					<select id="health-d" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
@@ -154,31 +122,36 @@ In the workbook, select the degree of dependence on the below sectors (High, Med
                 <tr>
                   <td>Company Provision</td>
                   <td>
-					<select id="energy-p" class="select-form">
+					<select id="energy-p" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
                   <td>
-					<select id="water-p" class="select-form">
+					<select id="water-p" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="food-p" class="select-form">
+					<select id="food-p" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="infra-p" class="select-form">
+					<select id="infra-p" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
 				  </td>
 				  <td>
-					<select id="health-p" class="select-form">
+					<select id="health-p" onchange="applyClass()" class="select-form">
+						<option val="-">-Select-</option>
 						<option val="L">Low</option>
 						<option val="M">Medium</option>
 						<option val="H">High</option>
@@ -251,4 +224,56 @@ Depending on the investment environment and government engagement, one or all of
 		</div>
 
 
+<script>
 
+function readDefaults(id){
+	// ["Low","Medium","High"];
+	switch(id)
+	{
+		//dependece[Energy, Water, Food, Infrastructure, Health]
+		//provision[Energy, Water, Food, Infrastructure, Health]
+		//region name
+	case "NL":
+		var defaults=[
+			["Low","Medium","Medium","High","Low"],
+			["Medium","Medium","Low","High","High"],
+			"Nuevo Leon"];
+	break;
+	case "DF":
+		var defaults=[
+			["Low","Medium","Medium","High","Low"],
+			["Low","Low","Low","Low","Low"],
+			"Mexico DF"];
+	break;
+	default:
+		var defaults=[
+			["Low","Low","Low","Low","Low"],
+			["Low","Low","Low","Low","Low"],
+			"Default"];
+	}
+	return defaults;
+}
+function classDefault(id){
+	dic={"Low":"btn-success","Medium":"btn-warning","High":"btn-danger"};
+	return dic[id];
+}
+function selectRegion(id){
+	var vals= readDefaults(id);
+	var dic=["energy","water","food","infra","health"];
+	var sec=["d","p"];
+	$("#region-def").val(vals[2]);
+	$("#region-info").html("[Using default values for Region]");
+	for (var j=0;j<=1;j++){ //J is 0 for dependency, 1 for provision
+		for (var i=0;i<=4;i++){
+			$('#'+dic[i]+'-'+sec[j]).val(vals[j][i])
+			.removeClass('btn-success btn-warning btn-danger')
+			.addClass(classDefault(vals[j][i]));
+	  	 }
+	}
+}
+function applyClass(){
+	var id=$("#"+event.target.id).val();
+	$("#"+event.target.id).removeClass('btn-success btn-warning btn-danger').addClass(classDefault(id));
+	$("#region-info").html("[Customized region]");
+}
+</script>

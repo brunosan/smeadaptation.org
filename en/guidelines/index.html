@@ -223,8 +223,7 @@ function classDefault(id){
 }
 function selectRegion(id){
 	var vals= readDefaults(id);
-	var dic=["energy","water","food","infra","health"];
-	var sec=["d","p"];
+
 	$("#region-def").val(vals.name);
 	$("#region-info").html("[Using default values for Region]");
 	for(var section in vals){
@@ -234,13 +233,48 @@ function selectRegion(id){
 			.addClass(classDefault(vals[section][key]));
 	  	 }
 	}
+	countResults();
 }
 function applyClass(){
 	var id=$("#"+event.target.id).val();
 	$("#"+event.target.id).removeClass('btn-success btn-warning btn-danger').addClass(classDefault(id));
 	$("#region-info").html("[Customized region]");
+	countResults();
 }
 
+function countResults(){
+	var vals= readDefaults("NL"); //read only to get blocks and sector
+	var sectors=["energy","water","food","infra","health"];
+	var items=["Low","Medium","High","Positive","Negative"];
+	for(var i = 0; i < sectors.length; i++){
+		var Lows = Mediums = Highs = Positives = Neutrals = Negatives = 0;
+		for(var block in vals){
+			switch($('#'+block+'-'+sectors[i]).val()){
+				{% assign items =  "Low|Medium|High|Positive|Negative" | split: "|" %}
+				{% for item in items %}
+				case "{{item}}":
+					{{ item }}s++;
+					break;
+				{% endfor %}
+			}//switch		
+	  	 }//section vals
+		//set badges for this sector
+		console.log(Lows);
+		var blocks = ["risk","opportunity"];
+		var overall="";
+	    for(var j = 0; j < blocks.length; j++){
+			$("#"+blocks[j]+"-"+sectors[i]+"-low").text(Lows+Positives);
+	    	$("#"+blocks[j]+"-"+sectors[i]+"-medium").text(Mediums);
+	    	$("#"+blocks[j]+"-"+sectors[i]+"-high").text(Highs+Negatives);
+			if (Lows+Positives < Highs+Negatives){
+				overall="High";
+			}else{
+				overall="Low";
+			}
+			$("#"+blocks[j]+"-"+sectors[i]+"-overall").text(overall);
+		}//for blocks badges
+	}//for sectors
+	
 }
 
 </script>

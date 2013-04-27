@@ -119,7 +119,30 @@ see this <a href="https://dl.dropboxusercontent.com/u/22057816/Indirect%20Forces
 
 In the SME Workbook, determine whether global forces are causing negative, neutral or positive trends in the priority sectors and 
 tally the combined effects. Compare the assessment of the direct data with global forces and determine the final condition. 
- 
+<div class="row">
+<table class="table table-bordered span6">
+              <thead>
+                <tr>
+                  <th>Global Forces</th>
+                  <th>Energy</th>
+                  <th>Water</th>
+                  <th>Food</th>
+                  <th>Infrastructure</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody>
+               	{% assign blocks =  "population_change|change_in_precipitation|sea_level_rise|water_supply|drought|infant_mortality|natural_disasters|technological_change|input_prices|change_in_temperature" | split: "|" %}
+				{% for block in blocks %}
+			 		<tr>
+                  	<td>{{block | replace: '_', ' '}}</td> 
+						{% include guide-row.html %}
+                	</tr>
+               {% endfor %}
+              </tbody>
+</table>
+</div>
+
 </div>
 <div id="section4">
 			<h1>Step 3 Risk & Opportunity</h1>

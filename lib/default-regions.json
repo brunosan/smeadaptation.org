@@ -15,21 +15,21 @@
 			"infra": "Low",
 			"health": "High"
 		},
-		"pop_change":{
+		"population_change":{
 			"energy": "Low",
 			"water": "Medium",
 			"food": "High", 
 			"infra": "Low",
 			"health": "Low"
 		},
-		"d_ppt":{
+		"change_in_precipitation":{
 			"energy": "Low",
 			"water": "Medium",
 			"food": "High", 
 			"infra": "Low",
 			"health": "Low"
 		},
-		"SLR":{
+		"sea_level_rise":{
 			"energy": "Low",
 			"water": "Medium",
 			"food": "High", 
@@ -78,7 +78,7 @@
 			"infra": "Low",
 			"health": "Low"
 		},
-		"d_temp":{
+		"change_in_temperature":{
 			"energy": "Low",
 			"water": "Medium",
 			"food": "High", 

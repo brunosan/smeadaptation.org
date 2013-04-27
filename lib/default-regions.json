@@ -1,0 +1,90 @@
+{
+	"NL": {
+		"name": "Nuevo Leon",
+		"dependency":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"provision":{
+			"energy": "High",
+			"water": "Medium",
+			"food": "Low", 
+			"infra": "Low",
+			"health": "High"
+		},
+		"pop_change":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"d_ppt":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"SLR":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"water_supply":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"drought":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"infant_mortality":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"natural_disasters":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"technological_change":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"input_prices":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		},
+		"d_temp":{
+			"energy": "Low",
+			"water": "Medium",
+			"food": "High", 
+			"infra": "Low",
+			"health": "Low"
+		}
+}
+
+}

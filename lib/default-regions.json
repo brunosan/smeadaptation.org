@@ -86,31 +86,31 @@
  		"health": "High"
 	 },
  	 "favoritism_by_local_authorities":{
- 		"Perception": "Low"
+ 		"perception": "Low"
 	},
  	"security_concerns":{
- 		"Perception": "Low"
+ 		"perception": "Low"
  	 },
  	 "goverment_corruption":{
- 		"Perception": "Low"
+ 		"perception": "Low"
  	 },
  	 "permits_and_licenses_cost":{
- 		"Perception": "Medium"
+ 		"perception": "Medium"
  	 },
  	 "inconsistent_law_enforcement":{
- 		"Perception": "Low"
+ 		"perception": "Low"
  	 },
  	 "tax_burden":{
- 		"Perception": "Low"
+ 		"perception": "Low"
  	 },
  	 "political_instability":{
- 		"Perception": "Low"
+ 		"perception": "Low"
 	},
 	 "action_plans":{
- 		"Perception": "High"
+ 		"perception": "High"
  	 },
 	 "leadership":{
- 		"Perception": "Low"
+ 		"perception": "Low"
 	 }
 }
 }

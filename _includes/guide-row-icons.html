@@ -1,11 +1,6 @@
 {% assign sectors =  "energy|water|food|infra|health" | split: "|" %}
 {% for sector in sectors %} 
-    <td>	
-		<span id="{{ block }}-{{ sector }}-low" class="badge badge-success">1</span>
-		<span id="{{ block }}-{{ sector }}-medium" class="badge badge-warning">2</span>
-		<span id="{{ block }}-{{ sector }}-high" class="badge badge-important">3</span>
-		<br>
-		Overall: <span id="{{ block }}-{{ sector }}-overall"class="label label-success">Low</span>
 
-	</td>
+{% include guide-icons-single.html %}
+
 {% endfor %}

@@ -11,11 +11,11 @@ lang: en
 	<div class="affix sidenav-container">
 	<ul class="nav nav-list nav-stacked nav-border-sidenav affix-bottom bs-docs-sidenav">
 		<li class="active"><a href="#section1">Guidelines</a></li>
-		<li><a href="#section2"><i class="icon-chevron-right"></i>Step 1 Dependence & Supply</a></li>			
-		<li><a href="#section3"><i class="icon-chevron-right"></i>Step 2 Sector Trends</a></li>			
-		<li><a href="#section4"><i class="icon-chevron-right"></i>Step 3 Risk & Opportunity</a></li>	
-		<li><a href="#section5"><i class="icon-chevron-right"></i>Step 4 Readiness</a></li>
-		<li><a href="#section6"><i class="icon-chevron-right"></i>Step 5 Strategy</a></li>
+		<li><a href="#section2"><i class="icon-chevron-right"></i> 1 Dependence & Supply</a></li>			
+		<li><a href="#section3"><i class="icon-chevron-right"></i> 2 Sector Trends</a></li>			
+		<li><a href="#section4"><i class="icon-chevron-right"></i> 3 vulnerability & Opportunity</a></li>	
+		<li><a href="#section5"><i class="icon-chevron-right"></i> 4 Readiness</a></li>
+		<li><a href="#section6"><i class="icon-chevron-right"></i> 5 Strategy</a></li>
 			<li class="divider"></li>
 	</ul>
 
@@ -61,7 +61,7 @@ Open up this <a href="https://dl.dropboxusercontent.com/u/22057816/SME%20WORKBOO
 </div>
 
 <div id="section2">
-			<h2>Step 1 Dependence & Supply</h2>
+			<h2> 1 Dependence & Supply</h2>
 
 <p>
 In this step, think about how the company depends on the key sectors or provides products and services in these areas. Is it a large consumer of electricity? Does it depend upon water as an input in your products? Would a temporary blockage of road transport of its products and inputs create serious financial hardship? <br><br>
@@ -81,7 +81,7 @@ Choose below the dependence values for your SME. You can also load default value
                 </tr>
               </thead>
               <tbody>
-               	{% assign blocks =  "|dependency|" | split: "|" %}
+               	{% assign blocks =  "dependency|" | split: "|" %}
 				{% for block in blocks %}
 			 		<tr>
                   	<td>Company {{block}}</td> 
@@ -92,10 +92,10 @@ Choose below the dependence values for your SME. You can also load default value
 </table>
 </div>
 
-Only continue Step 2 for those sectors in which dependence is "High" or "Medium" and for which "yes" was selected. Sectors with "Low" and "no" responses are likely not priorities for the SME to address at this time.<br><br> 
+Only continue  2 for those sectors in which dependence is "High" or "Medium" and for which "yes" was selected. Sectors with "Low" and "no" responses are likely not priorities for the SME to address at this time.<br><br> 
 
 <div id="section3">
-			<h1>Step 2 Sector Trends</h1>
+			<h1> 2 Sector Trends</h1>
 		<p>
 <br><strong>Direct Data</strong><br>
 <br>For your priority sectors, first, look for any direct data on the current and projected conditions in this sector. The scale of measurement will be dependent on your business operations. Your operational scale may be at the community, state, regional or national level. Data will exist for some scales and be nonexistent or incomplete at others. Different strategies will need to be undertaken to account for this difference.<br><br>
@@ -145,10 +145,10 @@ tally the combined effects. Compare the assessment of the direct data with globa
 
 </div>
 <div id="section4">
-			<h1>Step 3 Risk & Opportunity</h1>
+			<h1> 3 vulnerability & Opportunity</h1>
 		<p><br>
 
-If a sector is in decline and the SME has medium-to-high dependence, then we will classify this sector as a risk for the SME. If the SME provides a service or product and the sector is in decline, then there may be demand for the SME to build resilience in this sector. 
+If a sector is in decline and the SME has medium-to-high dependence, then we will classify this sector as a vulnerability for the SME. If the SME provides a service or product and the sector is in decline, then there may be demand for the SME to build resilience in this sector. 
 		</p>
 		<div class="row">
 		<table class="table table-bordered span6 .table-condensed">
@@ -163,7 +163,7 @@ If a sector is in decline and the SME has medium-to-high dependence, then we wil
 		                </tr>
 		              </thead>
 		              <tbody>
-		               	{% assign blocks =  "risk|opportunity" | split: "|" %}
+		               	{% assign blocks =  "vulnerability|" | split: "|" %}
 						{% for block in blocks %}
 					 		<tr>
 		                  	<td>{{block | replace: '_', ' '}}</td> 
@@ -173,11 +173,33 @@ If a sector is in decline and the SME has medium-to-high dependence, then we wil
 		              </tbody>
 		</table>
 		</div>
+And this is the overall Vulnerability
+		<div class="row">
+			<div class="offset1 span5">
+			<table class="table table-bordered">
+		              <thead>
+		                <tr>
+		                  <th></th>
+		                  <th>Perception</th>
+		                </tr>
+		              </thead>
+		              <tbody>
+		               	{% assign blocks =  "Vulnerability|" | split: "|" %}
+						{% for block in blocks %}
+					 		<tr>
+		                  	<td>{{block | replace: '_', ' '}}</td> 
+								{% assign sector =  "perception" %}
+								{% include guide-icons-single.html %}
+		                	</tr>
+		               {% endfor %}
+		              </tbody>
+		</table>
+		</div></div>
 
 
 </div>
 <div id="section5">
-			<h1>Step 4 Readiness</h1>
+			<h1> 4 Readiness</h1>
 	
 	<strong>Business Readiness</strong> <br><br>
 	How are the conditions for investing in your business and your community? Examine the indicators in the SME Workbook. Are costs of tax legislation, favoritism by local authorities and corruption major hinderances to investment? <br><br>
@@ -220,7 +242,7 @@ If a sector is in decline and the SME has medium-to-high dependence, then we wil
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 
-							{% assign sector =  "Perception" %}
+							{% assign sector =  "perception" %}
 							{% include guide-single.html %}
 	                	</tr>
 	               {% endfor %}
@@ -228,14 +250,34 @@ If a sector is in decline and the SME has medium-to-high dependence, then we wil
 	</table>
 	</div>	
 	</div>
-
-
+<h2>Overall Readiness</h2>
+	<div class="row">
+		<div class="offset1 span5">
+		<table class="table table-bordered">
+	              <thead>
+	                <tr>
+	                  <th></th>
+	                  <th>Perception</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	               	{% assign blocks =  "readiness|" | split: "|" %}
+					{% for block in blocks %}
+				 		<tr>
+	                  	<td>{{block | replace: '_', ' '}}</td> 
+							{% assign sector =  "perception" %}
+							{% include guide-icons-single.html %}
+	                	</tr>
+	               {% endfor %}
+	              </tbody>
+	</table>
+	</div></div>
 
 		</div>
 
 <div id="section6">
-			<h1>Step 5 Strategy</h1>
-Several strategies exist according to the risk or opportunity present in each sector. Four key strategies include: <br><br>
+			<h1> 5 Strategy</h1>
+Several strategies exist according to the vulnerability or opportunity present in each sector. Four key strategies include: <br><br>
 
 <ul>
 <li> Investments in services or products - the SME can seek to expand in its current market by identifying specific services and products that can help communities adapt. Much of this will require new financial investments.</li><br>
@@ -261,7 +303,6 @@ function readDefaults(id){
 	            json = data;
 	        }
 	    });
-		console.log(json);
 	    return json[id];
 }
 function classDefault(id){
@@ -291,12 +332,13 @@ function applyClass(){
 }
 
 function countResults(){
-	var vals= readDefaults("NL"); //read only to get blocks and sector
-	var sectors=["energy","water","food","infra","health"];
+	var vals= readDefaults("NL"); //read only to get blocks
+	var sectors=["energy","water","food","infra","health","perception"];
 	var items=["Low","Medium","High","Positive","Negative"];
 	for(var i = 0; i < sectors.length; i++){
 		var Lows = Mediums = Highs = Positives = Neutrals = Negatives = 0;
 		for(var block in vals){
+			console.log('#'+block+'-'+sectors[i],$('#'+block+'-'+sectors[i]).val());
 			switch($('#'+block+'-'+sectors[i]).val()){
 				{% assign items =  "Low|Medium|High|Positive|Negative" | split: "|" %}
 				{% for item in items %}
@@ -307,9 +349,10 @@ function countResults(){
 			}//switch		
 	  	 }//section vals
 		//set badges for this sector
-		var blocks = ["risk","opportunity"];
+		var blocks = ["vulnerability","readiness"];
 		var overall="";
 	    for(var j = 0; j < blocks.length; j++){
+			console.log("#"+blocks[j]+"-"+sectors[i]+"-low",Lows+Positives);
 			$("#"+blocks[j]+"-"+sectors[i]+"-low").text(Lows+Positives);
 	    	$("#"+blocks[j]+"-"+sectors[i]+"-medium").text(Mediums);
 	    	$("#"+blocks[j]+"-"+sectors[i]+"-high").text(Highs+Negatives);

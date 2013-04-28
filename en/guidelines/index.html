@@ -81,7 +81,7 @@ Choose below the dependence values for your SME. You can also load default value
                 </tr>
               </thead>
               <tbody>
-               	{% assign blocks =  "dependency|provision" | split: "|" %}
+               	{% assign blocks =  "|dependency|" | split: "|" %}
 				{% for block in blocks %}
 			 		<tr>
                   	<td>Company {{block}}</td> 
@@ -136,7 +136,7 @@ tally the combined effects. Compare the assessment of the direct data with globa
 				{% for block in blocks %}
 			 		<tr>
                   	<td>{{block | replace: '_', ' '}}</td> 
-						{% include guide-row-trend.html %}
+						{% include guide-row-vulnerability.html %}
                 	</tr>
                {% endfor %}
               </tbody>
@@ -181,9 +181,56 @@ If a sector is in decline and the SME has medium-to-high dependence, then we wil
 	
 	<strong>Business Readiness</strong> <br><br>
 	How are the conditions for investing in your business and your community? Examine the indicators in the SME Workbook. Are costs of tax legislation, favoritism by local authorities and corruption major hinderances to investment? <br><br>
+	<div class="row">
+	<div class="offset1 span5">
+	<table class="table table-bordered">
+	              <thead>
+	                <tr>
+	                  <th>Business Readiness</th>
+	                  <th>Perception</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	               	{% assign blocks =  "favoritism_by_local_authorities|security_concerns|goverment_corruption|permits_and_licenses_cost|inconsistent_law_enforcement|tax_burden|political_instability" | split: "|" %}
+					{% for block in blocks %}
+				 		<tr>
+	                  	<td>{{block | replace: '_', ' '}}</td> 
+							{% assign sector =  "Perception" %}
+							{% include guide-single.html %}
+	                	</tr>
+	               {% endfor %}
+	              </tbody>
+	</table>
+	</div>	
+	</div>
 	
-	<strong>Business Readiness</strong> <br><br> 
+	<strong>Goverment Readiness</strong> <br><br> 
 	Further, are local, state and government policies proactively addressing vulnerabilities and attempting to build resilience?<br><br> 
+	<div class="row">
+	<div class="offset1 span5">
+	<table class="table table-bordered">
+	              <thead>
+	                <tr>
+	                  <th>Goverment Readiness</th>
+	                  <th>Perception</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	               	{% assign blocks =  "action_plans|leadership|" | split: "|" %}
+					{% for block in blocks %}
+				 		<tr>
+	                  	<td>{{block | replace: '_', ' '}}</td> 
+							{% assign sector =  "Perception" %}
+							{% include guide-single.html %}
+	                	</tr>
+	               {% endfor %}
+	              </tbody>
+	</table>
+	</div>	
+	</div>
+
+
+
 		</div>
 
 <div id="section6">
@@ -214,6 +261,7 @@ function readDefaults(id){
 	            json = data;
 	        }
 	    });
+		console.log(json);
 	    return json[id];
 }
 function classDefault(id){
@@ -259,7 +307,6 @@ function countResults(){
 			}//switch		
 	  	 }//section vals
 		//set badges for this sector
-		console.log(Lows);
 		var blocks = ["risk","opportunity"];
 		var overall="";
 	    for(var j = 0; j < blocks.length; j++){

@@ -1,90 +1,116 @@
 {
-	"NL": {
-		"name": "Nuevo Leon",
-		"dependency":{
-			"energy": "Low",
-			"water": "Medium",
-			"food": "High", 
-			"infra": "Low",
-			"health": "Low"
-		},
-		"provision":{
-			"energy": "High",
-			"water": "Medium",
-			"food": "Low", 
-			"infra": "Low",
-			"health": "High"
-		},
-		"population_change":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"change_in_precipitation":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"sea_level_rise":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"water_supply":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"drought":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"infant_mortality":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"natural_disasters":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"technological_change":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"input_prices":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		},
-		"change_in_temperature":{
-			"energy": "Positive",
-			"water": "Neutral",
-			"food": "Negative", 
-			"infra": "Positive",
-			"health": "Positive"
-		}
+ "NL": {
+ 	"name": "Nuevo Leon",
+	"dependency":{
+ 		"energy": "Low",
+ 		"water": "Medium",
+ 		"food": "High", 
+ 		"infra": "Low",
+ 		"health": "Low"
+ 	 },
+ 	 "provision":{
+ 		"energy": "High",
+ 		"water": "Medium",
+ 		"food": "Low", 
+ 		"infra": "Low",
+ 		"health": "High"
+ 	 },
+ 	 "population_change":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "change_in_precipitation":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "sea_level_rise":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "water_supply":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "Medium"
+ 	 },
+ 	 "drought":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "infant_mortality":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "natural_disasters":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "technological_change":{
+ 		"energy": "Medium",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "input_prices":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+ 	 },
+ 	 "change_in_temperature":{
+ 		"energy": "High",
+ 		"water": "Neutral",
+ 		"food": "Low", 
+ 		"infra": "High",
+ 		"health": "High"
+	 },
+ 	 "favoritism_by_local_authorities":{
+ 		"Perception": "Low"
+	},
+ 	"security_concerns":{
+ 		"Perception": "Low"
+ 	 },
+ 	 "goverment_corruption":{
+ 		"Perception": "Low"
+ 	 },
+ 	 "permits_and_licenses_cost":{
+ 		"Perception": "Medium"
+ 	 },
+ 	 "inconsistent_law_enforcement":{
+ 		"Perception": "Low"
+ 	 },
+ 	 "tax_burden":{
+ 		"Perception": "Low"
+ 	 },
+ 	 "political_instability":{
+ 		"Perception": "Low"
+	},
+	 "action_plans":{
+ 		"Perception": "High"
+ 	 },
+	 "leadership":{
+ 		"Perception": "Low"
+	 }
 }
-
 }

@@ -70,6 +70,10 @@ body {
 	height:52px;;	
 }
 
+.select-form{
+	width:89px;
+}
+
 .lang-icon{
     height: 40px;
     overflow: visible;
@@ -192,6 +196,18 @@ body {
     }
 }
 
+/* D3 Graph */
+.h-d3,.v-d3{stroke:black;stroke-dasharray:4 4;stroke-width:1;stroke-opacity:.5;}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 18px;
 
 
 

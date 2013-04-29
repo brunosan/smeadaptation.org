@@ -15,9 +15,11 @@ lang: es
 				{{ post.date | date: "%B %e, %Y" }}
 			</p>
 		
-			{{ post.content | split:'</p>' | first }} 
-			<a src="{{post.url}}"> <p>Leer el resto de la entrada</a>.</p>
-		
+			<p>{{ post.content | split:'</p>' | first }}
+			</p> 
+			<p>
+			<a href="{{post.url}}" class="btn"> Lea el resto de la entrada</a>.
+			</p>
 			<hr />
 		</div>
 	{% endif %}{% endfor %}

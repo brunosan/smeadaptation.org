@@ -1,0 +1,6 @@
+{% assign sectors =  "energy|water|food|infra|health" | split: "|" %}
+{% for sector in sectors %} 
+
+{% include guide-single-driver.html %}
+
+{% endfor %}

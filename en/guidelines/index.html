@@ -93,6 +93,10 @@ Choose below the dependence values for your SME. You can also load default value
 
 <p id="offset-table">
 You can load default values for your region if available here:
+<form class="form-search ui-widget">
+  <input type="text" id="regions" class="input-medium search-query">
+  <button type="submit" class="btn">Search</button>
+</form>
 <div  class="btn-group">
   <button class="btn" ><a onclick="selectRegion('NL')" href="#offset-table">Nuevo León</a></button>
   <button class="btn" ><a onclick="selectRegion('otro')" href="#offset-table">Other</a></button>
@@ -142,7 +146,7 @@ You can load default values for your region if available here:
 				{% for block in blocks %}
 			 		<tr>
                   	<td>{{block | replace: '_', ' '}}</td> 
-						{% include guide-row-vulnerability.html %}
+						{% include guide-row-driver.html %}
                 	</tr>
                {% endfor %}
               </tbody>
@@ -299,4 +303,6 @@ Depending on the investment environment and government engagement, one or all of
 		</div>
 		
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="/lib/jquery/jquery-1.9.1.js"></script>
+<script src="{{site.baseurl}}lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{site.baseurl}}lib/js/guidelines.js"></script>

@@ -3,7 +3,7 @@ layout: layout
 title: Guidelines
 nav_title: Guidelines
 order: 1
-lang: es
+lang: en
 ---
 <div class="container">
 <div class="row">
@@ -17,6 +17,7 @@ lang: es
 		<li><a href="#section5"><i class="icon-chevron-right"></i> 4 Readiness</a></li>
 		<li><a href="#section6"><i class="icon-chevron-right"></i> 5 Strategy</a></li>
 			<li class="divider"></li>
+		<li><a href="#section7"><i class="icon-chevron-right"></i> Model</a></li>
 	</ul>
 
 	<form class="navbar-form pull-left">
@@ -43,6 +44,9 @@ lang: es
 			<p class=".navbar-text" id="region-info">
 				<a class="btn" href="#section1" onclick="loadExample()"><i class="icon-hand-right"></i> Load example</a>
 			</p>
+			<p class=".navbar-text" id="region-info">
+				<a class="btn btn-info" href="http://bsan.eu/ZLyb0o" target="_blank"><i class="icon-envelope"></i> Send Feedback</a>
+			</p>
 		  </fieldset>
 
 	</form>
@@ -56,20 +60,13 @@ lang: es
 		<p>
 
 <p>
-Bla bla bla. summary of what we are about to do.
+We will examine vulnerabilities across 5 sectors crucial to human well-being in the face of climate change and other global forces. Once these vulnerabilities are assessed, we will see what the “readiness” for investment in your priority sectors are. Some of the cells will be pre-populated based on your state, others you will need to research and determine yourself. 
 </p>
-
-
-
-
 </div>
-
 <div id="section2">
 			<h2> 1 Dependence</h2>
-
 <p>
-
-Choose below the dependence values for your SME. You can also load default values for each region.
+In which sector is your company particularly dependent? Beyond normal operations, such as lighting your office or washing dishes, but that are crucial for the production of your major products and completion of services to your customers? For example, a brewer would be highly dependent on water as an input and a logistics company would be highly dependent on infrastructure. 
 <div class="row">
 <table class="table table-bordered span6">
               <thead>
@@ -100,7 +97,12 @@ Choose below the dependence values for your SME. You can also load default value
 		<p>
 
 <p id="offset-table">
-You can load default values for your region if available here:
+Using several indicators per sector, the overall condition, or supply, of the sector is calculated for your state (enter your state in the search box below). 
+However, the purpose of this project is to not only assess the current status, but to look at global trends brought about by climate, population and other changes. 
+Thus, it is important to look at the “drivers” that will impact the quality and quantity of these sectors in decades to come. 
+Five major drivers are listed, that, in most cases, will have an impact, to varying degrees, on these sectors. <br><br>
+
+Select the degree to which these drivers impact these sectors in your state based on your own experience as well as data sources such as the <a href="http://www.atlasnacionalderiesgos.gob.mx">National Risk Atlas</a>.  
 <form class="form-search ui-widget">
   <input type="text" id="regions" class="input-medium search-query" placeholder="Search region deafults" autocomplete="off">
 </form>
@@ -159,8 +161,8 @@ You can load default values for your region if available here:
 </div>
 <div id="section4">
 			<h1> 3 Vulnerability</h1>
-		<p><br>
-
+			<p>
+		Vulnerability is a function of dependency, condition and trends. The sector with the highest vulnerability is your priority sector. This is where you and your SME should work on building resilience for your business and your community first. 
 		</p>
 		<div class="row">
 		<table class="table table-bordered span6 .table-condensed">
@@ -175,7 +177,7 @@ You can load default values for your region if available here:
 		                </tr>
 		              </thead>
 		              <tbody>
-		               	{% assign blocks =  "vulnerability|" | split: "|" %}
+		               	{% assign blocks =  "Vulnerability|" | split: "|" %}
 						{% for block in blocks %}
 					 		<tr>
 		                  	<td>{{block | replace: '_', ' '}}</td> 
@@ -185,14 +187,13 @@ You can load default values for your region if available here:
 		              </tbody>
 		</table>
 		</div>
-And this is the overall Vulnerability
 		<div class="row">
 			<div class="offset1 span5">
 			<table class="table table-bordered">
 		              <thead>
 		                <tr>
-		                  <th></th>
-		                  <th>Perception</th>
+		            		<th></th>
+			                  <th>Overall</th>
 		                </tr>
 		              </thead>
 		              <tbody>
@@ -212,8 +213,12 @@ And this is the overall Vulnerability
 </div>
 <div id="section5">
 			<h1> 4 Readiness</h1>
+	<p>
+If your SME needs to take action, how easy will it be to make investments and create resilience for you and your community? 
+Excess regulation, uncertainty about law enforcement and even political instability and violence can prevent many entrepreneurs from 
+from creating the innovations needed in this rapidly changing world. Below are several key factors, based on the <a href=http://smeadaptation.org/en/survey/index.html>National SME Adaptation Survey</a> that entrepreneurs indicated are important in investing in their business and communities. 
+Select the degree to which these "readiness" conditions apply to the business environment in which you operate.  	
 	
-	<strong>Business Readiness</strong> <br><br>
 	
 	<div class="row">
 	<div class="offset1 span5">
@@ -225,12 +230,12 @@ And this is the overall Vulnerability
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "favoritism_by_local_authorities|security_concerns|goverment_transparency|permits_and_licenses_cost|inconsistent_law_enforcement|tax_burden|political_instability" | split: "|" %}
+	               	{% assign blocks =  "Equal_treatment_by_local_authorities|Investment_safety|Government_transparency|Ease_of_starting_a_business|Consistent_law_enforcement|Tax_fairness|Political_stability" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 
 							{% assign sector =  "perception" %}
-							{% include guide-single.html %}
+							{% include guide-single-r.html %}
 	                	</tr>
 	               {% endfor %}
 	              </tbody>
@@ -239,23 +244,22 @@ And this is the overall Vulnerability
 	</div>
 	
 	
-<h2>Overall Readiness</h2>
 	<div class="row">
 		<div class="offset1 span5">
 		<table class="table table-bordered">
 	              <thead>
 	                <tr>
-	                  <th></th>
-	                  <th>Perception</th>
+	            		<th></th>
+		                  <th>Overall</th>	              
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "readiness|" | split: "|" %}
+	               	{% assign blocks =  "Readiness|" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 
 							{% assign sector =  "perception" %}
-							{% include guide-icons-single.html %}
+							{% include guide-icons-single-r.html %}
 	                	</tr>
 	               {% endfor %}
 	              </tbody>
@@ -265,8 +269,17 @@ And this is the overall Vulnerability
 		</div>
 
 <div id="section6">
-			<h1> 5 Strategy</h1>
-Several strategies exist according to the vulnerability or opportunity present in each sector. Four key strategies include: <br><br>
+			<h1> 5 Strategy</h1>			
+Now, look back to which sectors have the highest vulnerabilities. T
+hese are your priority sectors, the sectors in which you should begin building resilience first. 
+How you achieve this resilience will depend on your specific circumstances, but common strategies include investing in more efficient production processes, building a more diverse supply chain and utilizing new technology and information sources to predict potential disruptions. <br><br>
+
+Second, think about your community and back at <a href="#section3">Step 2</a>. Unselect the company dependency and only look at the scores for your region. Are they similar or different than your company vulnerabilities? Can you provide products or services that address these vulnerabilities? If your state has high vulnerability to food, your SME might develop more reliable and efficient food delivery or technology distribution systems. High vulnerability in health might indicate an unmet demand for sanitary products. <br><br> 
+
+What is the "readiness" score? Can you make investments easily to build resilience? If so, an aggressive investment strategy in these sectors may be the path forward. If readiness is low, other strategies, such as reaching out to civil society, universities and other businesses to develop cost-effective alliances and solutions to adaptation challenges may be best. <br><br>
+
+ 			</i>
+Several strategies exist according to the vulnerability or opportunity present in each sector. Strategies can include: <br><br>
 
 <ul>
 <li> Investments in services or products - the SME can seek to expand in its current market by identifying specific services and products that can help communities adapt. Much of this will require new financial investments.</li><br>
@@ -275,12 +288,29 @@ Several strategies exist according to the vulnerability or opportunity present i
 <li> Gather information - there still may be no apparent path forward. New technologies and approaches may be needed. Check back with smeadaptation.org for solutions. </li><br> 
 </ul>
 
-Depending on the investment environment and government engagement, one or all of these strategies might be pursued. <br><br>
+Visit the <a href="http://smeadaptation.org/en/blog/index.html">SME Adaptation Blog</a> for examples of how similar entrepreneurs are addressing risks and finding opportunities in building resilience.
 
-<div id='rv-chart'>
+<br><br>
 
+<div id='rv-chart'></div>
+</div>
+		
+<div id="section7">
+	<h1> Model</h1>
 
-		</div>
+<ul>	
+	<li>A Vulnerability score < 0 is Low, otherwise High</li>
+	<li>A sector's Vulnerability score is defined as Dependency * (Condition-average of Drivers)</li>
+	<li>Combined Vulnerability is the average of all sector risks</li><br>
+	
+	<li>Dependency scores Neutral_Low_Medium_High correspond respectively to [0,1,2,3]</li>
+	<li>Condition scores Good_Moderate_Bad correspond respectively to [-3,0,3]</li>
+	<li>Drivers scores Low_Moderate_Strong correspond respectively to [1,2,3]</li><br>
+	
+	<li>The Overall Readiness score is the average of all readiness indicators</li>
+	</ul>	
+	<br><br>
+</div>			
 		
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="/lib/jquery/jquery-1.9.1.js"></script>

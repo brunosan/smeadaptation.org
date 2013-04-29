@@ -296,18 +296,20 @@ Visit the <a href="http://smeadaptation.org/en/blog/index.html">SME Adaptation B
 </div>
 		
 <div id="section6">
-	<h1> Model</h1>
+	<h1> Methodology</h1>
+
+<ul>	
+	<li>A Vulnerability score < 0 is Low, otherwise High</li>
+	<li>A sector's Vulnerability score is defined as Dependency * (Condition-average of Drivers)</li>
+	<li>Combined Vulnerability is the average of all sector risks</li><br>
 	
-	Vulnerability < 0 is low, otherwise High
-	Overall Vulnerability is average is Vulnerability_sector
-	Vulnerability_sector= Dependency_sector* (Condition_sector-Average_Drivers_sector)
-	Where Dependency is [0,1,2,3]
-	Condition is [-3,0,3]
-	Driver is [1,2,3]
+	<li>Dependency scores Neutral_Low_Medium_High correspond respectively to [0,1,2,3]</li>
+	<li>Condition scores Good_Moderate_Bad correspond respectively to [-3,0,3]</li>
+	<li>Drivers scores Low_Moderate_Strong correspond respectively to [1,2,3]</li><br>
 	
-	Readiness is Average_Drivers
-	
-	
+	<li>The Overall Readiness score is the average of all readiness indicators</li>
+	</ul>	
+	<br><br>
 </div>			
 		
 <script src="http://d3js.org/d3.v3.min.js"></script>

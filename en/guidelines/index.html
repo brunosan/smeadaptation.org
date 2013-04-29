@@ -32,7 +32,12 @@ lang: en
 			<p class=".navbar-text" id="region-info"></p>
 		  </fieldset>
 		  <fieldset>
-			
+			<p class=".navbar-text" id="region-info">
+				Vulnerability: <span id="Vulnerability-nav-overall" class="label label-info">?</span>
+			</p>
+			<p class=".navbar-text" id="region-info">
+				Readiness: <span id="Readiness-nav-overall" class="label label-info">?</span>
+			</p>
 					
 		  </fieldset>
 
@@ -93,8 +98,7 @@ Choose below the dependence values for your SME. You can also load default value
 <p id="offset-table">
 You can load default values for your region if available here:
 <form class="form-search ui-widget">
-  <input type="text" id="regions" class="input-medium search-query">
-  <button type="submit" class="btn" href="#offset-table">Search</button>
+  <input type="text" id="regions" class="input-medium search-query" placeholder="Search region deafults" autocomplete="off">
 </form>
 </p>
 

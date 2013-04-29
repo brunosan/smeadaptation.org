@@ -280,6 +280,9 @@ body {
 .anchor-offset table{
 }
 
+.table td {
+   text-align: center;   
+}
 
 /* Map */
 #map { 

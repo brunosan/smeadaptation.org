@@ -1,74 +1,384 @@
 {
- "NL": {
- 	"name": "Nuevo Leon",
- 	 "Condition":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "Natural_disasters":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "Precipitation_change":{
- 		"energy": "High",
- 		"water": "Low",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "Drought":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "Medium"
- 	 },
- 	 "Sea_level_rise":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "Overconsumption":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "favoritism_by_local_authorities":{
- 		"perception": "Low"
-	},
- 	"security_concerns":{
- 		"perception": "Low"
- 	 },
- 	 "goverment_corruption":{
- 		"perception": "Low"
- 	 },
- 	 "permits_and_licenses_cost":{
- 		"perception": "Medium"
- 	 },
- 	 "inconsistent_law_enforcement":{
- 		"perception": "Low"
- 	 },
- 	 "tax_burden":{
- 		"perception": "Low"
- 	 },
- 	 "political_instability":{
- 		"perception": "Low"
-	},
-	 "action_plans":{
- 		"perception": "High"
- 	 },
-	 "leadership":{
- 		"perception": "Low"
-	 }
-}
+    "NL": {
+        "name": "Nuevo Leon",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Moderate",
+            "health": "Good"
+        },
+        "Natural_disasters": {
+            "energy": "High",
+            "water": "Neutral",
+            "food": "Low",
+            "infra": "High",
+            "health": "High"
+        },
+        "Precipitation_change": {
+            "energy": "High",
+            "water": "Low",
+            "food": "Low",
+            "infra": "High",
+            "health": "High"
+        },
+        "Drought": {
+            "energy": "High",
+            "water": "Neutral",
+            "food": "Low",
+            "infra": "High",
+            "health": "Medium"
+        },
+        "Sea_level_rise": {
+            "energy": "High",
+            "water": "Neutral",
+            "food": "Low",
+            "infra": "High",
+            "health": "High"
+        },
+        "Overconsumption": {
+            "energy": "High",
+            "water": "Neutral",
+            "food": "Low",
+            "infra": "High",
+            "health": "High"
+        },
+        "favoritism_by_local_authorities": {
+            "perception": "Low"
+        },
+        "security_concerns": {
+            "perception": "Low"
+        },
+        "goverment_corruption": {
+            "perception": "Low"
+        },
+        "permits_and_licenses_cost": {
+            "perception": "Medium"
+        },
+        "inconsistent_law_enforcement": {
+            "perception": "Low"
+        },
+        "tax_burden": {
+            "perception": "Low"
+        },
+        "political_instability": {
+            "perception": "Low"
+        },
+        "action_plans": {
+            "perception": "High"
+        },
+        "leadership": {
+            "perception": "Low"
+        }
+    },
+    "AGS": {
+        "name": "Aguascalientes",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Good"
+        }
+    },
+    "BC": {
+        "name": "Baja California",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Moderate",
+            "health": "Moderate"
+        }
+    },
+    "BCS": {
+        "name": "Baja California Sur",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Good",
+            "food": "Moderate",
+            "infra": "Bad",
+            "health": "Good"
+        }
+    },
+    "CAM": {
+        "name": "Campeche",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Good"
+        }
+    },
+    "COA": {
+        "name": "Coahuila",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Good"
+        }
+    },
+    "COL": {
+        "name": "Colima",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Good"
+        }
+    },
+    "CHS": {
+        "name": "Chiapas",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "CHI": {
+        "name": "Chihuahua",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Moderate",
+            "health": "Good"
+        }
+    },
+    "DF": {
+        "name": "Distrito Federal",
+        "Condition": {
+            "energy": "Good",
+            "water": "Moderate",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Good"
+        }
+    },
+    "DGO": {
+        "name": "Durango",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Moderate",
+            "health": "Moderate"
+        }
+    },
+    "GTO": {
+        "name": "Guanajuato",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Moderate",
+            "food": "Moderate",
+            "infra": "Moderate",
+            "health": "Bad"
+        }
+    },
+    "GRO": {
+        "name": "Guerrero",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "HGO": {
+        "name": "Hidalgo",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Moderate",
+            "health": "Bad"
+        }
+    },
+    "JAL": {
+        "name": "Jalisco",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Bad",
+            "food": "Moderate",
+            "infra": "Moderate",
+            "health": "Good"
+        }
+    },
+    "MX": {
+        "name": "Estado de México",
+        "Condition": {
+            "energy": "Good",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Good",
+            "health": "Moderate"
+        }
+    },
+    "MIC": {
+        "name": "Michoacán",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Moderate",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "MOR": {
+        "name": "Morelos",
+        "Condition": {
+            "energy": "Good",
+            "water": "Moderate",
+            "food": "Moderate",
+            "infra": "Good",
+            "health": "Moderate"
+        }
+    },
+    "NAY": {
+        "name": "Nayarit",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Moderate",
+            "food": "Moderate",
+            "infra": "Bad",
+            "health": "Good"
+        }
+    },
+    "OAX": {
+        "name": "Oaxaca",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "PUE": {
+        "name": "Puebla",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Moderate",
+            "health": "Bad"
+        }
+    },
+    "QRO": {
+        "name": "Querétaro",
+        "Condition": {
+            "energy": "Good",
+            "water": "Moderate",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Bad"
+        }
+    },
+    "QR": {
+        "name": "Quintana Roo",
+        "Condition": {
+            "energy": "Good",
+            "water": "Moderate",
+            "food": "Good",
+            "infra": "Good",
+            "health": "Moderate"
+        }
+    },
+    "SLP": {
+        "name": "San Luis Potosí",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Bad",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Moderate"
+        }
+    },
+    "SIN": {
+        "name": "Sinaloa",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Moderate",
+            "infra": "Good",
+            "health": "Moderate"
+        }
+    },
+    "SON": {
+        "name": "Oaxaca",
+        "Condition": {
+            "energy": "Good",
+            "water": "Good",
+            "food": "Moderate",
+            "infra": "Good",
+            "health": "Good"
+        }
+    },
+    "TAB": {
+        "name": "Tabasco",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Moderate",
+            "food": "Bad",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "TAM": {
+        "name": "Tamaulipas",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Good",
+            "food": "Good",
+            "infra": "Moderate",
+            "health": "Moderate"
+        }
+    },
+    "TLX": {
+        "name": "Tlaxcala",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Bad",
+            "food": "Moderate",
+            "infra": "Good",
+            "health": "Bad"
+        }
+    },
+    "VER": {
+        "name": "Veracruz",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Bad",
+            "food": "Moderate",
+            "infra": "Bad",
+            "health": "Bad"
+        }
+    },
+    "YUC": {
+        "name": "Yucatán",
+        "Condition": {
+            "energy": "Moderate",
+            "water": "Moderate",
+            "food": "Moderate",
+            "infra": "Moderate",
+            "health": "Moderate"
+        }
+    },
+    "ZAC": {
+        "name": "Zacatecas",
+        "Condition": {
+            "energy": "Bad",
+            "water": "Moderate",
+            "food": "Moderate",
+            "infra": "Bad",
+            "health": "Moderate"
+        }
+    }
 }

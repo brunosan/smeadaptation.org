@@ -44,25 +44,25 @@
          "health":"Strong"
       },
       "Equal_treatment_by_local_authorities":{
-         "perception":"Low"
+         "perception":"high"
       },
       "Investment_safety":{
-         "perception":"Low"
+         "perception":"low"
       },
       "Government_transparency":{
-         "perception":"Low"
+         "perception":"low"
       },
       "Ease_of_starting_a_business":{
-         "perception":"Medium"
+         "perception":"medium"
       },
       "Consistent_law_enforcement":{
-         "perception":"Low"
+         "perception":"high"
       },
       "Tax_fairness":{
-         "perception":"Low"
+         "perception":"medium"
       },
       "Political_stability":{
-         "perception":"Low"
+         "perception":"medium"
       }
    },
    "AGS":{

@@ -127,7 +127,7 @@ You can load default values for your region if available here:
 <table  class="table table-bordered span6">
               <thead>
                 <tr>
-                  <th>Global Forces</th>
+                  <th></th>
                   <th>Energy</th>
                   <th>Water</th>
                   <th>Food</th>
@@ -136,7 +136,37 @@ You can load default values for your region if available here:
                 </tr>
               </thead>
               <tbody>
-               	{% assign blocks =  "population_change|change_in_precipitation|sea_level_rise|water_supply|drought|infant_mortality|natural_disasters|technological_change|input_prices|change_in_temperature" | split: "|" %}
+
+               		{% assign blocks =  "Condition|" | split: "|" %}
+					{% for block in blocks %}
+						<tr>
+				   	<td>{{block | replace: '_', ' '}}</td> 
+							{% include guide-row-vulnerability.html %}
+				 	</tr>
+				{% endfor %}
+              </tbody>
+</table>
+</div>
+
+<p>In the SME Workbook, determine whether global forces are causing negative, neutral or positive trends in the priority sectors and 
+tally the combined effects. Compare the assessment of the direct data with global forces and determine the final condition.blablabla
+</p>
+
+<div class="row">
+<table  class="table table-bordered span6">
+              <thead>
+                <tr>
+                  <th>Drivers</th>
+                  <th>Energy</th>
+                  <th>Water</th>
+                  <th>Food</th>
+                  <th>Infrastructure</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody>
+
+               	{% assign blocks =  "Natural_disasters|Precipitation_change|Drought|Sea_level_rise|Overconsumption" | split: "|" %}
 				{% for block in blocks %}
 			 		<tr>
                   	<td>{{block | replace: '_', ' '}}</td> 

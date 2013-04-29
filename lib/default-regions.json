@@ -1,76 +1,48 @@
 {
  "NL": {
  	"name": "Nuevo Leon",
- 	 "population_change":{
+ 	 "Condition":{
  		"energy": "High",
  		"water": "Neutral",
  		"food": "Low", 
  		"infra": "High",
  		"health": "High"
  	 },
- 	 "change_in_precipitation":{
+ 	 "Natural_disasters":{
  		"energy": "High",
  		"water": "Neutral",
  		"food": "Low", 
  		"infra": "High",
  		"health": "High"
  	 },
- 	 "sea_level_rise":{
+ 	 "Precipitation_change":{
  		"energy": "High",
- 		"water": "Neutral",
+ 		"water": "Low",
  		"food": "Low", 
  		"infra": "High",
  		"health": "High"
  	 },
- 	 "water_supply":{
+ 	 "Drought":{
  		"energy": "High",
  		"water": "Neutral",
  		"food": "Low", 
  		"infra": "High",
  		"health": "Medium"
  	 },
- 	 "drought":{
+ 	 "Sea_level_rise":{
  		"energy": "High",
  		"water": "Neutral",
  		"food": "Low", 
  		"infra": "High",
  		"health": "High"
  	 },
- 	 "infant_mortality":{
+ 	 "Overconsumption":{
  		"energy": "High",
  		"water": "Neutral",
  		"food": "Low", 
  		"infra": "High",
  		"health": "High"
  	 },
- 	 "natural_disasters":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "technological_change":{
- 		"energy": "Medium",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "input_prices":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
- 	 },
- 	 "change_in_temperature":{
- 		"energy": "High",
- 		"water": "Neutral",
- 		"food": "Low", 
- 		"infra": "High",
- 		"health": "High"
-	 },
  	 "favoritism_by_local_authorities":{
  		"perception": "Low"
 	},

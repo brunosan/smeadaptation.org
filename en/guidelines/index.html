@@ -187,7 +187,7 @@ Using several indicators per sector, the overall condition, or supply, of the se
 		                </tr>
 		              </thead>
 		              <tbody>
-		               	{% assign blocks =  " Combined Vulnerability|" | split: "|" %}
+		               	{% assign blocks =  "Vulnerability|" | split: "|" %}
 						{% for block in blocks %}
 					 		<tr>
 		                  	<td>{{block | replace: '_', ' '}}</td> 

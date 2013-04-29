@@ -8,41 +8,41 @@
             "infra": "Moderate",
             "health": "Good"
         },
-        "Natural_disasters": {
-            "energy": "High",
-            "water": "Neutral",
-            "food": "Low",
-            "infra": "High",
-            "health": "High"
-        },
-        "Precipitation_change": {
-            "energy": "High",
-            "water": "Low",
-            "food": "Low",
-            "infra": "High",
-            "health": "High"
-        },
-        "Drought": {
-            "energy": "High",
-            "water": "Neutral",
-            "food": "Low",
-            "infra": "High",
-            "health": "Medium"
-        },
-        "Sea_level_rise": {
-            "energy": "High",
-            "water": "Neutral",
-            "food": "Low",
-            "infra": "High",
-            "health": "High"
-        },
-        "Overconsumption": {
-            "energy": "High",
-            "water": "Neutral",
-            "food": "Low",
-            "infra": "High",
-            "health": "High"
-        },
+		"Natural_disasters": {
+		    "energy": "Strong",
+		    "water": "None",
+		    "food": "Low",
+		    "infra": "Strong",
+		    "health": "Strong"
+		},
+		"Precipitation_change": {
+		    "energy": "Strong",
+		    "water": "Low",
+		    "food": "Low",
+		    "infra": "Strong",
+		    "health": "Strong"
+		},
+		"Drought": {
+		    "energy": "Strong",
+		    "water": "None",
+		    "food": "Low",
+		    "infra": "Strong",
+		    "health": "Moderate"
+		},
+		"Sea_level_rise": {
+		    "energy": "Strong",
+		    "water": "None",
+		    "food": "Low",
+		    "infra": "Strong",
+		    "health": "Strong"
+		},
+		"Overconsumption": {
+		    "energy": "Strong",
+		    "water": "None",
+		    "food": "Low",
+		    "infra": "Strong",
+		    "health": "Strong"
+		},
         "favoritism_by_local_authorities": {
             "perception": "Low"
         },

@@ -17,6 +17,7 @@ lang: en
 		<li><a href="#section5"><i class="icon-chevron-right"></i> 4 Readiness</a></li>
 		<li><a href="#section6"><i class="icon-chevron-right"></i> 5 Strategy</a></li>
 			<li class="divider"></li>
+		<li><a href="#section7"><i class="icon-chevron-right"></i> Model</a></li>
 	</ul>
 
 	<form class="navbar-form pull-left">
@@ -243,11 +244,12 @@ Select the degree to which these "readiness" conditions apply to the business en
 		<table class="table table-bordered">
 	              <thead>
 	                <tr>
-	              
+	            		<th></th>
+		                  <th>Overall</th>	              
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "Total Readiness|" | split: "|" %}
+	               	{% assign blocks =  "Readiness|" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 
@@ -285,10 +287,23 @@ Visit the <a href="http://smeadaptation.org/en/blog/index.html">SME Adaptation B
 
 <br><br>
 
-<div id='rv-chart'>
-
-
-		</div>
+<div id='rv-chart'></div>
+</div>
+		
+<div id="section6">
+	<h1> Model</h1>
+	
+	Vulnerability < 0 is low, otherwise High
+	Overall Vulnerability is average is Vulnerability_sector
+	Vulnerability_sector= Dependency_sector* (Condition_sector-Average_Drivers_sector)
+	Where Dependency is [0,1,2,3]
+	Condition is [-3,0,3]
+	Driver is [1,2,3]
+	
+	Readiness is Average_Drivers
+	
+	
+</div>			
 		
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="/lib/jquery/jquery-1.9.1.js"></script>

@@ -43,25 +43,25 @@
          "infra":"Strong",
          "health":"Strong"
       },
-      "favoritism_by_local_authorities":{
+      "Equal_treatment_by_local_authorities":{
          "perception":"Low"
       },
-      "security_concerns":{
+      "Investment_safety":{
          "perception":"Low"
       },
-      "goverment_transparency":{
+      "Government_transparency":{
          "perception":"Low"
       },
-      "permits_and_licenses_cost":{
+      "Ease_of_starting_a_business":{
          "perception":"Medium"
       },
-      "inconsistent_law_enforcement":{
+      "Consistent_law_enforcement":{
          "perception":"Low"
       },
-      "tax_burden":{
+      "Tax_fairness":{
          "perception":"Low"
       },
-      "political_instability":{
+      "Political_stability":{
          "perception":"Low"
       }
    },

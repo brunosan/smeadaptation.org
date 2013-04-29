@@ -3,7 +3,7 @@ layout: post
 title: National Water Commission (CONAGUA)
 lang: en
 location: [-99.01,19.40]
-image: example2.jpg
+image: 
 icon: park
 color: "#ff4444"
 --- 

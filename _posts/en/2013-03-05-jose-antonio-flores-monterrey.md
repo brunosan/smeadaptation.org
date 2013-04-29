@@ -3,7 +3,7 @@ layout: post
 title: "Abastecedora de empaques y rastros"
 lang: en
 location: [-100.314102,25.676187]
-image: example2.jpg
+image: 
 icon: park
 color: "#ff4444"
 --- 

@@ -3,7 +3,7 @@ layout: post
 title: Resilient chocolate
 lang: en
 location: [-92.9585,17.9691]
-image: example2.jpg
+image: vicente.jpg
 icon: shop
 color: "#A0522D"
 --- 

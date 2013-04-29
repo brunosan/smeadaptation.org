@@ -3,7 +3,7 @@ layout: post
 title: Agroindustrias
 lang: en
 location: [-92.811193,17.71928]
-image: example2.jpg
+image: 
 icon: star-stroked
 color: "#00FFFF"
 --- 

@@ -3,7 +3,7 @@ layout: post
 title: The growing challenges of cattle farming
 lang: en
 location: [-98.51,18.00]
-image: example2.jpg
+image: 
 icon: park
 color: "#ff4444"
 --- 

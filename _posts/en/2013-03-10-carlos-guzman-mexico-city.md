@@ -3,7 +3,7 @@ layout: post
 title: Pharmaceuticals in a changing world
 lang: en
 location: [-99.161,19.4100]
-image: example2.jpg
+image: 
 icon: park
 color: "#ff4444"
 --- 

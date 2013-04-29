@@ -3,7 +3,7 @@ layout: post
 title: Resilient farms, forests and fisheries
 lang: en
 location: [-93.6529,18.067]
-image: example2.jpg
+image: ovidio.jpg
 icon: park
 color: "#4169E1"
 --- 

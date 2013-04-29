@@ -3,7 +3,7 @@ layout: post
 title: Keeping ice cream cold in a warming world
 lang: en
 location: [-92.884,18.000]
-image: example2.jpg
+image: julia.jpg
 icon: park
 color: "#ff4444"
 --- 

@@ -3,7 +3,7 @@ layout: post
 title: Healthlife Nutrition
 lang: en
 location: [-99.105,19.440]
-image: example2.jpg
+image: 
 icon: park
 color: "#ff4444"
 --- 

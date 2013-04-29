@@ -207,7 +207,7 @@ body {
 
 .axis text {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 
@@ -272,14 +272,12 @@ body {
 	 width: 120px;
  }
 
-.anchor-offset h1{
+.anchor-offset h1,h2{
 	padding-top: 70px; 
 	margin-top: -70px;
-	 }
+}
 
-.anchor-offset h2{
-	padding-top: 70px; 
-	margin-top: -70px;
+.anchor-offset table{
 }
 
 

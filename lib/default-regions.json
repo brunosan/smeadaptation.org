@@ -1,20 +1,6 @@
 {
  "NL": {
  	"name": "Nuevo Leon",
-	"dependency":{
- 		"energy": "Low",
- 		"water": "Medium",
- 		"food": "High", 
- 		"infra": "Low",
- 		"health": "Low"
- 	 },
- 	 "provision":{
- 		"energy": "High",
- 		"water": "Medium",
- 		"food": "Low", 
- 		"infra": "Low",
- 		"health": "High"
- 	 },
  	 "population_change":{
  		"energy": "High",
  		"water": "Neutral",

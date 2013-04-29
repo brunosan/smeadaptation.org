@@ -56,20 +56,13 @@ lang: en
 		<p>
 
 <p>
-Bla bla bla. summary of what we are about to do.
+We will examine vulnerabilities across 5 sectors crucial to human well-being in the face of climate change and other global forces. Once these vulnerabilities are assessed, we will see what the “readiness” for investment in your priority sectors are. Some of the cells will be pre-populated based on your state, others you will need to research and determine yourself. 
 </p>
-
-
-
-
 </div>
-
 <div id="section2">
 			<h2> 1 Dependence</h2>
-
 <p>
-
-Choose below the dependence values for your SME. You can also load default values for each region.
+In which sector is your company particularly dependent? Beyond normal operations, such as lighting your office or washing dishes, but that are crucial for the production of your major products and completion of services to your customers? For example, a brewer would be highly dependent on water as an input and a logistics company would be highly dependent on infrastructure. 
 <div class="row">
 <table class="table table-bordered span6">
               <thead>
@@ -100,7 +93,7 @@ Choose below the dependence values for your SME. You can also load default value
 		<p>
 
 <p id="offset-table">
-You can load default values for your region if available here:
+Using several indicators per sector, the overall condition, or supply, of the sector is calculated for your state (enter your state in the search box below). However, the purpose of this project is to not only assess the current status, but to look at global trends brought about by climate, population and other changes. Thus, it is important to look at the “drivers” that will impact the quality and quantity of these sectors in decades to come. Five major drivers are listed, that, in most cases, will have an impact, to varying degrees, on these sectors.  
 <form class="form-search ui-widget">
   <input type="text" id="regions" class="input-medium search-query" placeholder="Search region deafults" autocomplete="off">
 </form>
@@ -160,7 +153,7 @@ You can load default values for your region if available here:
 <div id="section4">
 			<h1> 3 Vulnerability</h1>
 		<p><br>
-
+The vulnerability is a function of dependency, condition and trends. The sector with the highest vulnerability is your priority sector. This is where you and your SME should work on building resilience for your business and your community first. 
 		</p>
 		<div class="row">
 		<table class="table table-bordered span6 .table-condensed">
@@ -175,7 +168,7 @@ You can load default values for your region if available here:
 		                </tr>
 		              </thead>
 		              <tbody>
-		               	{% assign blocks =  "vulnerability|" | split: "|" %}
+		               	{% assign blocks =  "Vulnerability|" | split: "|" %}
 						{% for block in blocks %}
 					 		<tr>
 		                  	<td>{{block | replace: '_', ' '}}</td> 
@@ -185,14 +178,13 @@ You can load default values for your region if available here:
 		              </tbody>
 		</table>
 		</div>
-And this is the overall Vulnerability
+And this is the overall Vulnerability<br><br>
 		<div class="row">
 			<div class="offset1 span5">
 			<table class="table table-bordered">
 		              <thead>
 		                <tr>
-		                  <th></th>
-		                  <th>Perception</th>
+		            
 		                </tr>
 		              </thead>
 		              <tbody>
@@ -225,7 +217,7 @@ And this is the overall Vulnerability
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "favoritism_by_local_authorities|security_concerns|goverment_transparency|permits_and_licenses_cost|inconsistent_law_enforcement|tax_burden|political_instability" | split: "|" %}
+	               	{% assign blocks =  "equal_treatment_by_local_authorities|investment_safety|goverment_transparency|ease_of_starting_a_business|consistent_law_enforcement|tax_fairness|political_stability" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 

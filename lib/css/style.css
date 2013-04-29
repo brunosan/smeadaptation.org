@@ -98,7 +98,7 @@ body {
 
 .carousel-control {
   height: 80px;
-  top: 160px;
+  top: 146px;
   margin-top: 0;
   font-size: 120px;
   text-shadow: 0 0 2px white;
@@ -121,7 +121,7 @@ body {
 }
 
 .carousel .item {
-  height: 500px;
+  height: 350px;
 }
 .carousel img {
   position: absolute;
@@ -159,7 +159,7 @@ body {
 .caption-offset{
 	position: relative;
     z-index: 9;
-    top: -500px;
+    top: -442px;
 }
 
 .carousel.fade

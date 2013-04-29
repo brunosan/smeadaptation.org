@@ -1,7 +1,7 @@
 <div id="myCarousel" class="carousel slide span12" data-interval="false">
   <div class="carousel-inner">
     <div id="carousel1" class="item active">
-      <div id="map1">
+      <div id="map1"></div>
       <div class="container">
         <div class="carousel-caption caption-offset">
           <h1>
@@ -17,12 +17,12 @@
 	{% else %}
 		Porcentaje de PyMEs que reconocen riesgos en la variación de los precios de insumos.
 	{% endif %}
-	</p>
+			</p>
         </div>
       </div>
     </div>
-    <div id="carousel2" class="item ">
-      <div id="map2">
+<div id="carousel2" class="item ">
+      <div id="map2"></div>
       <div class="container">
         <div class="carousel-caption caption-offset">
           <h1>
@@ -39,12 +39,10 @@
 		Porcentaje de PyMEs que reconocen riesgos en el acceso a energía.
 	{% endif %}
 	</p>
-        </div>
-      </div>
-    </div>
-
+    </div> 
   </div>
-
+</div>
+</div>
 
   <a class="left carousel-control carousel-control-left " href="{{site.baseurl}}#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control carousel-control-right " href="{{site.baseurl}}#myCarousel" data-slide="next">&rsaquo;</a>
@@ -53,16 +51,16 @@
 
 <script>
 var maps={"map1":"gai.map-df7e710b",
-		  "map2":"gai.map-df7e710b",}
+		  "map2":"gai.map-df7e710b"};
 for(var key in maps){
-		  insertMap(key,maps[key]);
+	console.log(key,maps[key]);
+	insertMap(key,maps[key]);
 };
 
 function insertMap(id,name){
   var map = mapbox.map(id,false, {x: 940, y: 500});
   //var map = mapbox.map('map1',false, {x: 256, y: 500});
   map.addLayer(mapbox.layer().id(name));
-  map.ui.zoomer.add();
   map.zoom(5).center({ lat: 20.8, lon: -94 });
 
 {% include markers.js %}

@@ -64,7 +64,7 @@ function insertMap(id,name){
   map.ui.zoombox.add();
   map.zoom(5).center({ lat: 20.8, lon: -94 });
   map.eventHandlers[3].remove();
-
+  _gaq.push(['_trackEvent', "Map_click",id]);
 {% include markers.js %}
 
   map.ui.attribution.add()

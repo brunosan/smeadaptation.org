@@ -47,6 +47,7 @@ markerLayer.factory(function(f) {
 MM.addEvent(map.parent, 'click', function() {
     var info = document.getElementById('markerinfo');
 	var pic = document.getElementById('markerpic');
+	
     info.innerHTML = '';
 	pic.innerHTML = '';
 });

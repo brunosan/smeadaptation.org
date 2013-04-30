@@ -70,27 +70,27 @@ Vamos a examinar las vulnerabilidades en 5 sectores fundamentales para el bienes
 
 Escoja de las siguientes opciones los valores de dependencia para su PyME. También se pueden cargar los valores por defecto de cada región. 
 <div class="row">
-<table class="table table-bordered span6">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Energía</th>
-                  <th>Agua</th>
-                  <th>Alimentos</th>
-                  <th>Infraestructura</th>
-                  <th>Cuidados Médicos</th>
-                </tr>
-              </thead>
-              <tbody>
-               	{% assign blocks =  "Dependencía de la compañia|" | split: "|" %}
-				{% for block in blocks %}
-			 		<tr>
-                  	<td>Company {{block}}</td> 
-						{% include guide-row.html %}
-                	</tr>
-               {% endfor %}
-              </tbody>
-</table>
+	<table class="table table-bordered span6">
+	              <thead>
+	                <tr>
+	                  <th></th>
+	                  <th>Energy</th>
+	                  <th>Water</th>
+	                  <th>Food</th>
+	                  <th>Infrastructure</th>
+	                  <th>Health</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	               	{% assign blocks =  "dependency|" | split: "|" %}
+					{% for block in blocks %}
+				 		<tr>
+	                  	<td>Company {{block}}</td> 
+							{% include guide-row.html %}
+	                	</tr>
+	               {% endfor %}
+	              </tbody>
+	</table>
 </div>
 
 
@@ -111,26 +111,28 @@ Puede cargar los valores por defecto de su región si se encuentran disponibles:
 <div class="row">
 <table  class="table table-bordered span6">
               <thead>
-                <tr>
-                  <th></th>
-                  <th>Energía</th>
-                  <th>Agua</th>
-                  <th>Alimentos</th>
-                  <th>Infraestructura</th>
-                  <th>Cuidados Médicos</th>
-                </tr>
-              </thead>
-              <tbody>
+				<table  class="table table-bordered span6">
+				              <thead>
+				                <tr>
+				                  <th></th>
+				                  <th>Energy</th>
+				                  <th>Water</th>
+				                  <th>Food</th>
+				                  <th>Infrastructure</th>
+				                  <th>Health</th>
+				                </tr>
+				              </thead>
+				              <tbody>
 
-               		{% assign blocks =  "Condición|" | split: "|" %}
-					{% for block in blocks %}
-						<tr>
-				   	<td>{{block | replace: '_', ' '}}</td> 
-							{% include guide-row-vulnerability.html %}
-				 	</tr>
-				{% endfor %}
-              </tbody>
-</table>
+				               		{% assign blocks =  "Condition|" | split: "|" %}
+									{% for block in blocks %}
+										<tr>
+								   	<td>{{block | replace: '_', ' '}}</td> 
+											{% include guide-row-vulnerability.html %}
+								 	</tr>
+								{% endfor %}
+				              </tbody>
+				</table>
 </div>
 
 <div class="row">

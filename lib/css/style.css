@@ -89,7 +89,7 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 60px;
-  margin-top:17px;
+  margin-top:33px;
 }
 
 .carousel .container {
@@ -299,10 +299,10 @@ body {
 }
 
 .zoomin {
-  top:64px;
+  top:9px;
   }
 .zoomout {
-  top:64px;
+  top:9px;
   }
 
 #map1 label { width: auto; display:inline; }

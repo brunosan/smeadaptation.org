@@ -10,37 +10,37 @@
       },
       "Natural_disasters":{
          "energy":"Strong",
-         "water":"None",
-         "food":"Low",
+         "water":"Strong",
+         "food":"Strong",
          "infra":"Strong",
          "health":"Strong"
       },
       "Precipitation_change":{
          "energy":"Strong",
-         "water":"Low",
+         "water":"Strong",
          "food":"Low",
-         "infra":"Strong",
-         "health":"Strong"
+         "infra":"Low",
+         "health":"Moderate"
       },
       "Drought":{
-         "energy":"Strong",
-         "water":"None",
-         "food":"Low",
-         "infra":"Strong",
+         "energy":"Moderate",
+         "water":"Strong",
+         "food":"Strong",
+         "infra":"None",
          "health":"Moderate"
       },
       "Sea_level_rise":{
-         "energy":"Strong",
+         "energy":"None",
          "water":"None",
-         "food":"Low",
-         "infra":"Strong",
-         "health":"Strong"
+         "food":"None",
+         "infra":"None",
+         "health":"None"
       },
       "Overconsumption":{
          "energy":"Strong",
-         "water":"None",
-         "food":"Low",
-         "infra":"Strong",
+         "water":"Moderate",
+         "food":"Moderate",
+         "infra":"Low",
          "health":"Strong"
       },
       "Equal_treatment_by_local_authorities":{

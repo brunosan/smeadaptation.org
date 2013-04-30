@@ -15,7 +15,7 @@ The website uses [Jekyll](https://github.com/mojombo/jekyll) as the framework to
 
 ###Known Issues
 
-The Guidelines framework is ad-hoc and grew organically. It would be better to better handle the data in the backend (e.g. local storage and some framework). It currently relies on ready and updating the DOM.
+The Guidelines framework is ad-hoc and grew organically. It would be better to better handle the data in the backend (e.g. local storage and some framework), ideally with an abstraction layer separating data and languages via *ids* so multi-language can be better implemented. It currently relies on ready and updating the DOM.
 
 Usage and data feedback issues crude Analytics beacons, it will be difficult to mine the data. Some REST API would be better.
 

@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: Resilient chocolate
+title: Vicente Martinez Comalcalco
 lang: en
 location: [-92.9585,17.9691]
 image: vicente.jpg
@@ -15,5 +15,6 @@ color: "#A0522D"
 
 </p>
 <p >
+COMING SOON
 </p>
 

@@ -1,0 +1,33 @@
+ID_0,ISO,NAME_0,ID_1,NAME_1,VARNAME_1,NL_NAME_1,HASC_1,CC_1,TYPE_1,ENGTYPE_1,VALIDFR_1,VALIDTO_1,REMARKS_1,Shape_Leng,Shape_Area
+143,MEX,Mexico,1804,Aguascalientes,,,MX.AG,,Estado,State,18350523,Present,,      2.80522355149,      0.45508492209
+143,MEX,Mexico,1805,Baja California,,,MX.BN,,Estado,State,19310207,Present,,     30.14468265220,      6.93515775379
+143,MEX,Mexico,1806,Baja California Sur,,,MX.BS,,Estado,State,19310207,Present,,     56.64308081900,      6.42598856650
+143,MEX,Mexico,1807,Campeche,,,MX.CM,,Estado,State,18630429,Present,,     19.77011294000,      4.92810025123
+143,MEX,Mexico,1808,Chiapas,,,MX.CP,,Estado,State,18420911,Present,,     18.45588871260,      6.23258220564
+143,MEX,Mexico,1809,Chihuahua,,,MX.CH,,Estado,State,18241004,Present,,     24.71816381070,     22.17933799610
+143,MEX,Mexico,1810,Coahuila,,,MX.CA,,Estado,State,18241004,Present,,     21.91432161730,     14.08373393950
+143,MEX,Mexico,1811,Colima,,,MX.CL,,Estado,State,18241004,Present,,      4.58210437258,      0.47966506422
+143,MEX,Mexico,1812,Distrito Federal,,,MX.DF,,Distrito Federal,Federal District,18241118,Present,,      1.62420401017,      0.13760395386
+143,MEX,Mexico,1813,Durango,,,MX.DU,,Estado,State,18241004,Present,,     19.11940068130,     11.09225854640
+143,MEX,Mexico,1814,Guanajuato,,,MX.GJ,,Estado,State,18241004,Present,,      9.37148057238,      2.67743677599
+143,MEX,Mexico,1815,Guerrero,,,MX.GR,,Estado,State,18241004,Present,,     16.70357640230,      5.53233248170
+143,MEX,Mexico,1816,Hidalgo,,,MX.HI,,Estado,State,18690115,Present,,      9.34413400944,      1.94274839193
+143,MEX,Mexico,1817,Jalisco,,,MX.JA,,Estado,State,18241004,Present,,     24.65524259020,      6.59567640224
+143,MEX,Mexico,1818,México,,,MX.MX,,Estado,State,1776,Present,,      9.50104687020,      1.99386064512
+143,MEX,Mexico,1819,Michoacán,,,MX.MC,,Estado,State,1776,Present,,     16.11755058200,      5.08284599743
+143,MEX,Mexico,1820,Morelos,,,MX.MR,,Estado,State,18690416,Present,,      3.08150056922,      0.43507296184
+143,MEX,Mexico,1821,Nayarit,,,MX.NA,,Estado,State,19170205,Present,,     15.81881680160,      2.39314186773
+143,MEX,Mexico,1822,Nuevo León,,,MX.NL,,Estado,State,18640226,Present,,     16.61049613020,      5.84179166685
+143,MEX,Mexico,1823,Oaxaca,,,MX.OA,,Estado,State,1788,Present,,     23.74615963920,      7.70707582918
+143,MEX,Mexico,1824,Puebla,,,MX.PU,,Estado,State,1776,Present,,     13.83795639750,      2.88899684002
+143,MEX,Mexico,1825,Querétaro,,,MX.QE,,Estado,State,18241004,Present,,      5.80706042439,      0.99976794487
+143,MEX,Mexico,1826,Quintana Roo,,,MX.QR,,Estado,State,19021124,Present,,     29.52635770320,      3.76437532105
+143,MEX,Mexico,1827,San Luis Potosí,,,MX.SL,,Estado,State,1788,Present,,     14.81157296220,      5.52716185038
+143,MEX,Mexico,1828,Sinaloa,,,MX.SI,,Estado,State,18301013,Present,,     38.31486848940,      4.78072108065
+143,MEX,Mexico,1829,Sonora,,,MX.SO,,Estado,State,18301013,Present,,     38.57810923960,     17.25622951890
+143,MEX,Mexico,1830,Tabasco,,,MX.TB,,Estado,State,18241004,Present,,     13.90614736220,      2.03007805690
+143,MEX,Mexico,1831,Tamaulipas,,,MX.TM,,Estado,State,1776,Present,,     49.01155878770,      7.01309023669
+143,MEX,Mexico,1832,Tlaxcala,,,MX.TL,,Estado,State,18241124,Present,,      2.93822076006,      0.35812570465
+143,MEX,Mexico,1833,Veracruz,,,MX.VE,,Estado,State,18241004,Present,,     32.87353112940,      5.93105404714
+143,MEX,Mexico,1834,Yucatán,,,MX.YU,,Estado,State,18241004,Present,,     13.46895870840,      3.29568136720
+143,MEX,Mexico,1835,Zacatecas,,,MX.ZA,,Estado,State,18241004,Present,,     21.14791277880,      6.69032506265

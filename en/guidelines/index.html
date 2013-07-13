@@ -231,7 +231,7 @@ Select the degree to which these "readiness" conditions apply to the business en
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "Government_transparency|Fairness_in_starting_a_business|Satisfaction_with_state_regulations|Use_of_internet_in_starting_a_business|Ease_of_enforcing_contracts|Degree_of_labor_force_education|Degree_of_labor_force_education"| split: "|" %}
+	               	{% assign blocks =  "Government_transparency|Fairness_in_starting_a_business|Satisfaction_with_state_regulations|Use_of_internet_in_starting_a_business|Ease_of_enforcing_contracts|Degree_of_labor_force_education|Degree_of_labor_force_education" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 

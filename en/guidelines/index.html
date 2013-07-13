@@ -70,7 +70,7 @@ lang: en
 <div id="section2">
 			<h2> 1 Dependence</h2>
 <p>
- What sector/s is your company particulary dependent upon? For Mexico state averages, see <a href="https://dl.dropboxusercontent.com/u/22057816/Sector.xlsx">Sectors Database</a><br>
+ What sector/s is your company particulary dependent upon? For Mexico averages, see: <a href="https://dl.dropboxusercontent.com/u/22057816/Sector.xlsx">Sectors Database</a><br>
  
 <div class="row">
 <table class="table table-bordered span6">
@@ -217,7 +217,9 @@ From the <a href="https://dl.dropboxusercontent.com/u/22057816/Drivers.xlsx">Dri
 	<p>
 If your SME needs to take action, how easy will it be to make investments and create resilience for you and your community? 
 Excess regulation, uncertainty about law enforcement and even political instability and violence can prevent many entrepreneurs from 
-from investing in resilience.
+from creating the innovations needed in this rapidly changing world. Below are several key factors, based on the <a href=http://smeadaptation.org/en/survey/index.html>National SME Adaptation Survey</a> that entrepreneurs indicated are important in investing in their business and communities. 
+Select the degree to which these "readiness" conditions apply to the business environment in which you operate.  	
+	
 	
 	<div class="row">
 	<div class="offset1 span5">
@@ -229,7 +231,7 @@ from investing in resilience.
 	                </tr>
 	              </thead>
 	              <tbody>
-	               	{% assign blocks =  "Satisfaction with state regulations|Use of internet in starting a business|Degree of education for labor force|Fairness in starting a business|Ease of enforcing contracts|Government Transparency"| split: "|" %}
+	               	{% assign blocks =  "Equal_treatment_by_local_authorities|Investment_safety|Government_transparency|Ease_of_starting_a_business|Consistent_law_enforcement|Tax_fairness|Political_stability" | split: "|" %}
 					{% for block in blocks %}
 				 		<tr>
 	                  	<td>{{block | replace: '_', ' '}}</td> 
